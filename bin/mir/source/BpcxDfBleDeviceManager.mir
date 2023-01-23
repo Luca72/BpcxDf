@@ -24,169 +24,219 @@ class BpcxDeviceManager{
     var _profileModel as BpcxProfileModel or Null;
     [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc"; @line = 9; @position = 16; ]
     private
+    var _dataModelFactory as BpcxDataModelFactory;
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc"; @line = 10; @position = 16; ]
+    private
     var _device as Device or Null;
-    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc"; @line = 11; @position = 16; ]
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc"; @line = 12; @position = 16; ]
     private
     var _configComplete as Boolean = false;
-    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc"; @line = 12; @position = 16; ]
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc"; @line = 13; @position = 16; ]
     private
     var _sampleInProgress as Boolean = false;
     //! Constructor
     //! @param bleDelegate The BLE delegate
     //! @param profileManager The profile manager
-    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc"; @line = 17; ]
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc"; @line = 18; ]
     public
-    function initialize(bleDelegate as BpcxDelegate, profileManager as BpcxProfileManager) as Void {
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_17_98_start:
-[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 18 8 ]
+    function initialize(bleDelegate as BpcxDelegate, profileManager as BpcxProfileManager, dataModelFactory as BpcxDataModelFactory) as Void {
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_18_141_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 19 8 ]
         %tmp.1 = null;
         putv self :_device %tmp.1;
-[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 20 8 ]
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 21 8 ]
         %tmp.2 = lgetv %bleDelegate;
         %tmp.3 = getv function %tmp.2 :notifyScanResult;
         %tmp.5 = lgetv %self;
         invoke %tmp.2 %tmp.3(%tmp.5);
-[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 21 8 ]
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 22 8 ]
         %tmp.6 = lgetv %bleDelegate;
         %tmp.7 = getv function %tmp.6 :notifyConnection;
         %tmp.9 = lgetv %self;
         invoke %tmp.6 %tmp.7(%tmp.9);
-[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 23 8 ]
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 24 8 ]
         %tmp.11 = lgetv %profileManager;
         putv self :_profileManager %tmp.11;
-[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 24 8 ]
-        %tmp.13 = lgetv %bleDelegate;
-        putv self :_delegate %tmp.13;
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_17_98_stop:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 25 8 ]
+        %tmp.13 = lgetv %dataModelFactory;
+        putv self :_dataModelFactory %tmp.13;
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 26 8 ]
+        %tmp.15 = lgetv %bleDelegate;
+        putv self :_delegate %tmp.15;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_18_141_stop:
     }
     //! Start BLE scanning
-    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc"; @line = 28; ]
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc"; @line = 30; ]
     public
     function start() as Void {
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_28_36_start:
-[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 29 8 ]
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_30_36_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 31 8 ]
         %tmp.1 = getm $.Toybox.BluetoothLowEnergy;
         %tmp.2 = getv function %tmp.1 :setScanState;
         %tmp.3 = getm $.Toybox.BluetoothLowEnergy;
         %tmp.4 = getv %tmp.3 :SCAN_STATE_SCANNING;
         invoke %tmp.1 %tmp.2(%tmp.4);
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_28_36_stop:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_30_36_stop:
     }
     //! Process scan result
     //! @param scanResult The scan result
-    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc"; @line = 34; ]
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc"; @line = 36; ]
     public
     function procScanResult(scanResult as ScanResult) as Void {
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_34_69_start:
-[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 36 8 ]
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_36_8_if_stmt:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_36_69_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 38 8 ]
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_38_8_if_stmt:
         %tmp.1 = lgetv %scanResult;
         %tmp.2 = getv function %tmp.1 :getRssi;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = 50;
         %tmp.5 = sub 0 %tmp.4;
         %tmp.6 = gt %tmp.3 %tmp.5;
-        bf %tmp.6 @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_36_8_if_end;
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_36_8_if_true:
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_36_40_start:
-[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 37 12 ]
+        bf %tmp.6 @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_38_8_if_end;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_38_8_if_true:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_38_40_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 39 12 ]
         %tmp.7 = getm $.Toybox.BluetoothLowEnergy;
         %tmp.8 = getv function %tmp.7 :setScanState;
         %tmp.9 = getm $.Toybox.BluetoothLowEnergy;
         %tmp.10 = getv %tmp.9 :SCAN_STATE_OFF;
         invoke %tmp.7 %tmp.8(%tmp.10);
-[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 38 12 ]
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 40 12 ]
         %tmp.11 = getm $.Toybox.BluetoothLowEnergy;
         %tmp.12 = getv function %tmp.11 :pairDevice;
         %tmp.14 = lgetv %scanResult;
         invoke %tmp.11 %tmp.12(%tmp.14);
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_36_40_stop:
-        goto @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_36_8_if_end;
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_36_8_if_end:
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_34_69_stop:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_38_40_stop:
+        goto @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_38_8_if_end;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_38_8_if_end:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_36_69_stop:
     }
     //! Process a new device connection
     //! @param device The device that was connected
-    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc"; @line = 44; ]
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc"; @line = 46; ]
     public
     function procConnection(device as Device) as Void {
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_44_61_start:
-[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 45 8 ]
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_45_8_if_stmt:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_46_61_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 47 8 ]
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_47_8_if_stmt:
         %tmp.1 = lgetv %device;
         %tmp.2 = getv function %tmp.1 :isConnected;
         %tmp.3 = invoke %tmp.1 %tmp.2();
-        bf %tmp.3 @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_45_8_if_false;
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_45_8_if_true:
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_45_34_start:
-[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 46 12 ]
+        bf %tmp.3 @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_47_8_if_false;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_47_8_if_true:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_47_34_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 48 12 ]
         %tmp.5 = lgetv %device;
         putv self :_device %tmp.5;
-[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 47 12 ]
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 49 12 ]
         %tmp.6 = self;
         %tmp.7 = getv function %tmp.6 :procDeviceConnected;
         invoke %tmp.6 %tmp.7();
-[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 48 12 ]
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 50 12 ]
         %tmp.9 = getv ? :WatchUi;
         %tmp.10 = getv function %tmp.9 :requestUpdate;
         invoke %tmp.9 %tmp.10();
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_45_34_stop:
-        goto @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_45_8_if_end;
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_45_8_if_false:
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_49_15_start:
-[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 50 12 ]
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_47_34_stop:
+        goto @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_47_8_if_end;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_47_8_if_false:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_51_15_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 52 12 ]
         %tmp.11 = null;
         putv self :_device %tmp.11;
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_49_15_stop:
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_45_8_if_end:
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_44_61_stop:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_51_15_stop:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_47_8_if_end:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_46_61_stop:
     }
     //! Update the profile after a is device connected
-    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc"; @line = 55; ]
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc"; @line = 57; ]
     private
     function procDeviceConnected() as Void {
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_55_51_start:
-[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 56 8 ]
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_56_8_if_stmt:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_57_51_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 58 8 ]
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_58_8_if_stmt:
         %tmp.2 = getv ? :_device;
         %tmp.3 = null;
         %tmp.4 = ne %tmp.2 %tmp.3;
-        bf %tmp.4 @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_56_8_if_end;
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_56_8_if_true:
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_56_29_start:
-[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 57 12 ]
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_57_12_if_stmt:
-        %tmp.6 = getv ? :_profileModel;
-        %tmp.7 = null;
-        %tmp.8 = eq %tmp.6 %tmp.7;
-        bf %tmp.8 @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_57_12_if_end;
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_57_12_if_true:
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_57_39_start:
-[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 58 16 ]
-        %tmp.12 = getm $;
-        %tmp.13 = getv %tmp.12 :BpcxProfileModel;
-        %tmp.15 = getv ? :_delegate;
-        %tmp.17 = getv ? :_profileManager;
-        %tmp.19 = getv ? :_device;
-        %tmp.20 = as %tmp.19 { (!Null) };
-        %tmp.9 = newc %tmp.13 (%tmp.15, %tmp.17, %tmp.20);
-        putv self :_profileModel %tmp.9;
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_57_39_stop:
-        goto @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_57_12_if_end;
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_57_12_if_end:
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_56_29_stop:
-        goto @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_56_8_if_end;
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_56_8_if_end:
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_55_51_stop:
+        bf %tmp.4 @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_58_8_if_end;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_58_8_if_true:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_58_29_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 59 12 ]
+        %tmp.6 = getv ? :_dataModelFactory;
+        %tmp.7 = getv function %tmp.6 :getProfileModel;
+        %tmp.9 = getv ? :_device;
+        %tmp.10 = as %tmp.9 { (!Null) };
+        %tmp.11 = invoke %tmp.6 %tmp.7(%tmp.10);
+        putv self :_profileModel %tmp.11;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_58_29_stop:
+        goto @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_58_8_if_end;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_58_8_if_end:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_57_51_stop:
     }
-    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc"; @line = 64; ]
-    function getProfileModel() as BpcxProfileModel {
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_64_51_start:
-[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 65 8 ]
-        %tmp.2 = getv ? :_profileModel;
-        %tmp.3 = as %tmp.2 BpcxProfileModel;
-        ret %tmp.3;
-_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_64_51_stop:
+    //! Get the active profile
+    //! @return The current profile, or null if no device connected
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc"; @line = 65; ]
+    public
+    function getActiveProfile() as BpcxProfileModel or Null {
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_65_60_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 66 8 ]
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_66_8_if_stmt:
+        %tmp.2 = getv ? :_device;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_66_8_if_end;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_66_8_if_true:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_66_29_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 67 12 ]
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_67_12_if_stmt:
+        %tmp.6 = getv ? :_device;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        %tmp.8 = getv function %tmp.7 :isConnected;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        %tmp.10 = not %tmp.9;
+        bf %tmp.10 @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_67_12_if_end;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_67_12_if_true:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_67_40_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 68 16 ]
+        %tmp.11 = null;
+        ret %tmp.11;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_67_40_stop:
+        goto @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_67_12_if_end;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_67_12_if_end:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_66_29_stop:
+        goto @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_66_8_if_end;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_66_8_if_end:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 71 8 ]
+        %tmp.13 = getv ? :_profileModel;
+        ret %tmp.13;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_65_60_stop:
+    }
+    //! Get whether a device is connected
+    //! @return true if connected, false otherwise
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc"; @line = 76; ]
+    public
+    function isConnected() as Boolean {
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_76_45_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 77 8 ]
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_77_8_if_stmt:
+        %tmp.2 = getv ? :_device;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_77_8_if_end;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_77_8_if_true:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_77_29_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 78 12 ]
+        %tmp.6 = getv ? :_device;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        %tmp.8 = getv function %tmp.7 :isConnected;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        ret %tmp.9;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_77_29_stop:
+        goto @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_77_8_if_end;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_77_8_if_end:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" 80 8 ]
+        %tmp.10 = false;
+        ret %tmp.10;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleDeviceManager_mc_76_45_stop:
     }
 }
 [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc"; @line = 1; ]

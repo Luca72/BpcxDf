@@ -2,8 +2,8 @@
 <debugInfo>
     <manifest filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/manifest.xml"/>
     <pcToLineNum>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="1" lineNum="40" parent="globals" pc="268435460" symbol="getApp"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="1" lineNum="41" parent="globals" pc="268435470" symbol="getApp"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="1" lineNum="42" parent="globals" pc="268435460" symbol="getApp"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="1" lineNum="43" parent="globals" pc="268435470" symbol="getApp"/>
         <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc" id="2" lineNum="4" parent="globals/BpcxProfileManager" pc="268435486" symbol="&lt;init&gt;"/>
         <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc" id="2" lineNum="6" parent="globals/BpcxProfileManager" pc="268435486" symbol="&lt;init&gt;"/>
         <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc" id="2" lineNum="7" parent="globals/BpcxProfileManager" pc="268435527" symbol="&lt;init&gt;"/>
@@ -30,480 +30,530 @@
         <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="10" lineNum="55" parent="globals/BpcxDfView" pc="268436309" symbol="compute"/>
         <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="10" lineNum="56" parent="globals/BpcxDfView" pc="268436313" symbol="compute"/>
         <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="10" lineNum="57" parent="globals/BpcxDfView" pc="268436332" symbol="compute"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="10" lineNum="71" parent="globals/BpcxDfView" pc="268436339" symbol="compute"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="11" lineNum="117" parent="globals/BpcxDfView" pc="268436387" symbol="onTimerResume"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="11" lineNum="118" parent="globals/BpcxDfView" pc="268436389" symbol="onTimerResume"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="20" parent="globals/BpcxDfView" pc="268436410" symbol="onLayout"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="21" parent="globals/BpcxDfView" pc="268436414" symbol="onLayout"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="24" parent="globals/BpcxDfView" pc="268436433" symbol="onLayout"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="25" parent="globals/BpcxDfView" pc="268436444" symbol="onLayout"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="28" parent="globals/BpcxDfView" pc="268436498" symbol="onLayout"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="29" parent="globals/BpcxDfView" pc="268436509" symbol="onLayout"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="32" parent="globals/BpcxDfView" pc="268436563" symbol="onLayout"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="33" parent="globals/BpcxDfView" pc="268436574" symbol="onLayout"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="36" parent="globals/BpcxDfView" pc="268436628" symbol="onLayout"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="37" parent="globals/BpcxDfView" pc="268436639" symbol="onLayout"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="41" parent="globals/BpcxDfView" pc="268436693" symbol="onLayout"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="42" parent="globals/BpcxDfView" pc="268436744" symbol="onLayout"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="43" parent="globals/BpcxDfView" pc="268436772" symbol="onLayout"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="44" parent="globals/BpcxDfView" pc="268436794" symbol="onLayout"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="45" parent="globals/BpcxDfView" pc="268436822" symbol="onLayout"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="48" parent="globals/BpcxDfView" pc="268436844" symbol="onLayout"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="13" lineNum="102" parent="globals/BpcxDfView" pc="268436905" symbol="onTimerStart"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="13" lineNum="103" parent="globals/BpcxDfView" pc="268436907" symbol="onTimerStart"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="14" lineNum="112" parent="globals/BpcxDfView" pc="268436928" symbol="onTimerPause"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="14" lineNum="113" parent="globals/BpcxDfView" pc="268436930" symbol="onTimerPause"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="15" lineNum="12" parent="globals/BpcxDfView" pc="268436951" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="15" lineNum="13" parent="globals/BpcxDfView" pc="268436953" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="15" lineNum="14" parent="globals/BpcxDfView" pc="268436971" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="15" lineNum="15" parent="globals/BpcxDfView" pc="268436981" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="16" lineNum="83" parent="globals/BpcxDfView" pc="268437018" symbol="onUpdate"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="16" lineNum="85" parent="globals/BpcxDfView" pc="268437022" symbol="onUpdate"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="16" lineNum="88" parent="globals/BpcxDfView" pc="268437069" symbol="onUpdate"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="16" lineNum="89" parent="globals/BpcxDfView" pc="268437097" symbol="onUpdate"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="16" lineNum="90" parent="globals/BpcxDfView" pc="268437117" symbol="onUpdate"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="16" lineNum="92" parent="globals/BpcxDfView" pc="268437137" symbol="onUpdate"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="16" lineNum="94" parent="globals/BpcxDfView" pc="268437154" symbol="onUpdate"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="16" lineNum="97" parent="globals/BpcxDfView" pc="268437171" symbol="onUpdate"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="17" lineNum="107" parent="globals/BpcxDfView" pc="268437196" symbol="onTimerStop"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="17" lineNum="108" parent="globals/BpcxDfView" pc="268437198" symbol="onTimerStop"/>
-        <entry filename="Rez.mc" id="18" lineNum="1" parent="globals/Rez" pc="268437219" symbol="&lt;init&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="19" lineNum="6" parent="globals/BpcxDfApp" pc="268437243" symbol="&lt;init&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="20" lineNum="17" parent="globals/BpcxDfApp" pc="268437262" symbol="onStart"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="20" lineNum="18" parent="globals/BpcxDfApp" pc="268437264" symbol="onStart"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="20" lineNum="19" parent="globals/BpcxDfApp" pc="268437298" symbol="onStart"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="20" lineNum="20" parent="globals/BpcxDfApp" pc="268437340" symbol="onStart"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="20" lineNum="22" parent="globals/BpcxDfApp" pc="268437390" symbol="onStart"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="20" lineNum="23" parent="globals/BpcxDfApp" pc="268437414" symbol="onStart"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="20" lineNum="24" parent="globals/BpcxDfApp" pc="268437432" symbol="onStart"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="21" lineNum="35" parent="globals/BpcxDfApp" pc="268437451" symbol="getInitialView"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="21" lineNum="36" parent="globals/BpcxDfApp" pc="268437453" symbol="getInitialView"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="22" lineNum="12" parent="globals/BpcxDfApp" pc="268437510" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="22" lineNum="13" parent="globals/BpcxDfApp" pc="268437512" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="23" lineNum="28" parent="globals/BpcxDfApp" pc="268437531" symbol="onStop"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="23" lineNum="29" parent="globals/BpcxDfApp" pc="268437533" symbol="onStop"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="23" lineNum="30" parent="globals/BpcxDfApp" pc="268437542" symbol="onStop"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="23" lineNum="31" parent="globals/BpcxDfApp" pc="268437551" symbol="onStop"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="24" lineNum="125" parent="globals/BpcxProfileModel" pc="268437561" symbol="getCadence"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="24" lineNum="126" parent="globals/BpcxProfileModel" pc="268437563" symbol="getCadence"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="25" lineNum="151" parent="globals/BpcxProfileModel" pc="268437572" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processMotorValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="25" lineNum="152" parent="globals/BpcxProfileModel" pc="268437574" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processMotorValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="25" lineNum="153" parent="globals/BpcxProfileModel" pc="268437597" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processMotorValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="25" lineNum="154" parent="globals/BpcxProfileModel" pc="268437644" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processMotorValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="25" lineNum="155" parent="globals/BpcxProfileModel" pc="268437691" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processMotorValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="25" lineNum="156" parent="globals/BpcxProfileModel" pc="268437732" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processMotorValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="25" lineNum="157" parent="globals/BpcxProfileModel" pc="268437773" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processMotorValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="26" lineNum="140" parent="globals/BpcxProfileModel" pc="268437790" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processBatteryValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="26" lineNum="141" parent="globals/BpcxProfileModel" pc="268437792" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processBatteryValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="26" lineNum="142" parent="globals/BpcxProfileModel" pc="268437815" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processBatteryValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="26" lineNum="143" parent="globals/BpcxProfileModel" pc="268437856" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processBatteryValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="26" lineNum="144" parent="globals/BpcxProfileModel" pc="268437903" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processBatteryValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="26" lineNum="145" parent="globals/BpcxProfileModel" pc="268437950" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processBatteryValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="26" lineNum="146" parent="globals/BpcxProfileModel" pc="268437997" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processBatteryValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="27" lineNum="68" parent="globals/BpcxProfileModel" pc="268438014" symbol="onCharacteristicChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="27" lineNum="69" parent="globals/BpcxProfileModel" pc="268438016" symbol="onCharacteristicChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="27" lineNum="71" parent="globals/BpcxProfileModel" pc="268438146" symbol="onCharacteristicChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="27" lineNum="72" parent="globals/BpcxProfileModel" pc="268438160" symbol="onCharacteristicChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="27" lineNum="75" parent="globals/BpcxProfileModel" pc="268438163" symbol="onCharacteristicChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="27" lineNum="76" parent="globals/BpcxProfileModel" pc="268438177" symbol="onCharacteristicChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="27" lineNum="79" parent="globals/BpcxProfileModel" pc="268438180" symbol="onCharacteristicChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="27" lineNum="80" parent="globals/BpcxProfileModel" pc="268438194" symbol="onCharacteristicChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="27" lineNum="83" parent="globals/BpcxProfileModel" pc="268438197" symbol="onCharacteristicChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="27" lineNum="84" parent="globals/BpcxProfileModel" pc="268438211" symbol="onCharacteristicChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="28" lineNum="91" parent="globals/BpcxProfileModel" pc="268438216" symbol="onDescriptorWrite"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="28" lineNum="92" parent="globals/BpcxProfileModel" pc="268438218" symbol="onDescriptorWrite"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="28" lineNum="93" parent="globals/BpcxProfileModel" pc="268438256" symbol="onDescriptorWrite"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="29" lineNum="98" parent="globals/BpcxProfileModel" pc="268438272" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="29" lineNum="99" parent="globals/BpcxProfileModel" pc="268438276" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="29" lineNum="100" parent="globals/BpcxProfileModel" pc="268438302" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="29" lineNum="103" parent="globals/BpcxProfileModel" pc="268438306" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="29" lineNum="104" parent="globals/BpcxProfileModel" pc="268438322" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="29" lineNum="105" parent="globals/BpcxProfileModel" pc="268438350" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="29" lineNum="106" parent="globals/BpcxProfileModel" pc="268438357" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="29" lineNum="107" parent="globals/BpcxProfileModel" pc="268438401" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="29" lineNum="108" parent="globals/BpcxProfileModel" pc="268438451" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="30" lineNum="162" parent="globals/BpcxProfileModel" pc="268438499" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processDistanceValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="30" lineNum="163" parent="globals/BpcxProfileModel" pc="268438501" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processDistanceValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="30" lineNum="164" parent="globals/BpcxProfileModel" pc="268438524" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processDistanceValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="30" lineNum="165" parent="globals/BpcxProfileModel" pc="268438565" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processDistanceValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="30" lineNum="166" parent="globals/BpcxProfileModel" pc="268438612" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processDistanceValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="30" lineNum="167" parent="globals/BpcxProfileModel" pc="268438653" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processDistanceValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="31" lineNum="131" parent="globals/BpcxProfileModel" pc="268438670" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processRiderValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="31" lineNum="132" parent="globals/BpcxProfileModel" pc="268438672" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processRiderValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="31" lineNum="133" parent="globals/BpcxProfileModel" pc="268438695" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processRiderValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="31" lineNum="134" parent="globals/BpcxProfileModel" pc="268438742" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processRiderValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="31" lineNum="135" parent="globals/BpcxProfileModel" pc="268438783" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processRiderValues&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="32" lineNum="113" parent="globals/BpcxProfileModel" pc="268438800" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processCccdWrite&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="32" lineNum="114" parent="globals/BpcxProfileModel" pc="268438802" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processCccdWrite&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="32" lineNum="115" parent="globals/BpcxProfileModel" pc="268438828" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processCccdWrite&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="32" lineNum="116" parent="globals/BpcxProfileModel" pc="268438875" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processCccdWrite&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="32" lineNum="118" parent="globals/BpcxProfileModel" pc="268438890" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processCccdWrite&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="30" parent="globals/BpcxProfileModel" pc="268438905" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="31" parent="globals/BpcxProfileModel" pc="268438909" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="32" parent="globals/BpcxProfileModel" pc="268438923" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="34" parent="globals/BpcxProfileModel" pc="268438937" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="35" parent="globals/BpcxProfileModel" pc="268438947" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="37" parent="globals/BpcxProfileModel" pc="268438974" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="39" parent="globals/BpcxProfileModel" pc="268438988" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="40" parent="globals/BpcxProfileModel" pc="268438998" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="41" parent="globals/BpcxProfileModel" pc="268439005" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="42" parent="globals/BpcxProfileModel" pc="268439026" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="43" parent="globals/BpcxProfileModel" pc="268439033" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="46" parent="globals/BpcxProfileModel" pc="268439063" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="47" parent="globals/BpcxProfileModel" pc="268439084" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="48" parent="globals/BpcxProfileModel" pc="268439091" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="51" parent="globals/BpcxProfileModel" pc="268439121" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="52" parent="globals/BpcxProfileModel" pc="268439142" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="53" parent="globals/BpcxProfileModel" pc="268439149" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="56" parent="globals/BpcxProfileModel" pc="268439179" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="57" parent="globals/BpcxProfileModel" pc="268439200" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="58" parent="globals/BpcxProfileModel" pc="268439207" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="62" parent="globals/BpcxProfileModel" pc="268439240" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="34" lineNum="4" parent="globals/BpcxDelegate" pc="268439253" symbol="&lt;init&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="35" lineNum="70" parent="globals/BpcxDelegate" pc="268439272" symbol="onCharacteristicChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="35" lineNum="71" parent="globals/BpcxDelegate" pc="268439276" symbol="onCharacteristicChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="35" lineNum="72" parent="globals/BpcxDelegate" pc="268439286" symbol="onCharacteristicChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="35" lineNum="73" parent="globals/BpcxDelegate" pc="268439293" symbol="onCharacteristicChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="35" lineNum="74" parent="globals/BpcxDelegate" pc="268439307" symbol="onCharacteristicChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="36" lineNum="27" parent="globals/BpcxDelegate" pc="268439339" symbol="notifyCharacteristicChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="36" lineNum="28" parent="globals/BpcxDelegate" pc="268439341" symbol="notifyCharacteristicChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="37" lineNum="87" parent="globals/BpcxDelegate" pc="268439361" symbol="notifyConnection"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="37" lineNum="88" parent="globals/BpcxDelegate" pc="268439363" symbol="notifyConnection"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="38" lineNum="81" parent="globals/BpcxDelegate" pc="268439383" symbol="notifyScanResult"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="38" lineNum="82" parent="globals/BpcxDelegate" pc="268439385" symbol="notifyScanResult"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="39" lineNum="58" parent="globals/BpcxDelegate" pc="268439405" symbol="onDescriptorWrite"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="39" lineNum="59" parent="globals/BpcxDelegate" pc="268439409" symbol="onDescriptorWrite"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="39" lineNum="60" parent="globals/BpcxDelegate" pc="268439419" symbol="onDescriptorWrite"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="39" lineNum="61" parent="globals/BpcxDelegate" pc="268439426" symbol="onDescriptorWrite"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="39" lineNum="62" parent="globals/BpcxDelegate" pc="268439440" symbol="onDescriptorWrite"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="40" lineNum="46" parent="globals/BpcxDelegate" pc="268439472" symbol="onConnectedStateChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="40" lineNum="47" parent="globals/BpcxDelegate" pc="268439476" symbol="onConnectedStateChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="40" lineNum="48" parent="globals/BpcxDelegate" pc="268439486" symbol="onConnectedStateChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="40" lineNum="49" parent="globals/BpcxDelegate" pc="268439493" symbol="onConnectedStateChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="40" lineNum="50" parent="globals/BpcxDelegate" pc="268439507" symbol="onConnectedStateChanged"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="41" lineNum="106" parent="globals/BpcxDelegate" pc="268439537" symbol="&lt;globals/BpcxDelegate/&lt;&gt;contains&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="41" lineNum="107" parent="globals/BpcxDelegate" pc="268439541" symbol="&lt;globals/BpcxDelegate/&lt;&gt;contains&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="41" lineNum="109" parent="globals/BpcxDelegate" pc="268439561" symbol="&lt;globals/BpcxDelegate/&lt;&gt;contains&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="41" lineNum="110" parent="globals/BpcxDelegate" pc="268439596" symbol="&lt;globals/BpcxDelegate/&lt;&gt;contains&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="41" lineNum="111" parent="globals/BpcxDelegate" pc="268439612" symbol="&lt;globals/BpcxDelegate/&lt;&gt;contains&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="41" lineNum="115" parent="globals/BpcxDelegate" pc="268439634" symbol="&lt;globals/BpcxDelegate/&lt;&gt;contains&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="42" lineNum="21" parent="globals/BpcxDelegate" pc="268439637" symbol="notifyDescriptorWrite"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="42" lineNum="22" parent="globals/BpcxDelegate" pc="268439639" symbol="notifyDescriptorWrite"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="43" lineNum="93" parent="globals/BpcxDelegate" pc="268439659" symbol="&lt;globals/BpcxDelegate/&lt;&gt;broadcastScanResult&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="43" lineNum="94" parent="globals/BpcxDelegate" pc="268439663" symbol="&lt;globals/BpcxDelegate/&lt;&gt;broadcastScanResult&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="43" lineNum="95" parent="globals/BpcxDelegate" pc="268439673" symbol="&lt;globals/BpcxDelegate/&lt;&gt;broadcastScanResult&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="43" lineNum="96" parent="globals/BpcxDelegate" pc="268439680" symbol="&lt;globals/BpcxDelegate/&lt;&gt;broadcastScanResult&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="43" lineNum="97" parent="globals/BpcxDelegate" pc="268439694" symbol="&lt;globals/BpcxDelegate/&lt;&gt;broadcastScanResult&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="44" lineNum="14" parent="globals/BpcxDelegate" pc="268439724" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="44" lineNum="15" parent="globals/BpcxDelegate" pc="268439726" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="44" lineNum="16" parent="globals/BpcxDelegate" pc="268439744" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="45" lineNum="33" parent="globals/BpcxDelegate" pc="268439755" symbol="onScanResults"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="45" lineNum="34" parent="globals/BpcxDelegate" pc="268439759" symbol="onScanResults"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="45" lineNum="35" parent="globals/BpcxDelegate" pc="268439779" symbol="onScanResults"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="45" lineNum="36" parent="globals/BpcxDelegate" pc="268439797" symbol="onScanResults"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="45" lineNum="37" parent="globals/BpcxDelegate" pc="268439836" symbol="onScanResults"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="46" lineNum="34" parent="globals/BpcxDeviceManager" pc="268439873" symbol="procScanResult"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="46" lineNum="36" parent="globals/BpcxDeviceManager" pc="268439875" symbol="procScanResult"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="46" lineNum="37" parent="globals/BpcxDeviceManager" pc="268439895" symbol="procScanResult"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="46" lineNum="38" parent="globals/BpcxDeviceManager" pc="268439916" symbol="procScanResult"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="47" lineNum="64" parent="globals/BpcxDeviceManager" pc="268439938" symbol="getProfileModel"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="47" lineNum="65" parent="globals/BpcxDeviceManager" pc="268439940" symbol="getProfileModel"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="48" lineNum="28" parent="globals/BpcxDeviceManager" pc="268439949" symbol="start"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="48" lineNum="29" parent="globals/BpcxDeviceManager" pc="268439951" symbol="start"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="49" lineNum="17" parent="globals/BpcxDeviceManager" pc="268439973" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="49" lineNum="18" parent="globals/BpcxDeviceManager" pc="268439975" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="49" lineNum="20" parent="globals/BpcxDeviceManager" pc="268439984" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="49" lineNum="21" parent="globals/BpcxDeviceManager" pc="268439998" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="49" lineNum="23" parent="globals/BpcxDeviceManager" pc="268440012" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="49" lineNum="24" parent="globals/BpcxDeviceManager" pc="268440022" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="50" lineNum="44" parent="globals/BpcxDeviceManager" pc="268440033" symbol="procConnection"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="50" lineNum="45" parent="globals/BpcxDeviceManager" pc="268440035" symbol="procConnection"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="50" lineNum="46" parent="globals/BpcxDeviceManager" pc="268440049" symbol="procConnection"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="50" lineNum="47" parent="globals/BpcxDeviceManager" pc="268440059" symbol="procConnection"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="50" lineNum="48" parent="globals/BpcxDeviceManager" pc="268440071" symbol="procConnection"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="50" lineNum="50" parent="globals/BpcxDeviceManager" pc="268440092" symbol="procConnection"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="51" lineNum="55" parent="globals/BpcxDeviceManager" pc="268440102" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;procDeviceConnected&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="51" lineNum="56" parent="globals/BpcxDeviceManager" pc="268440104" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;procDeviceConnected&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="51" lineNum="57" parent="globals/BpcxDeviceManager" pc="268440117" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;procDeviceConnected&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="51" lineNum="58" parent="globals/BpcxDeviceManager" pc="268440130" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;procDeviceConnected&gt;"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="52" lineNum="78" parent="globals/BpcxFitContributor" pc="268440195" symbol="setTimerRunning"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="52" lineNum="79" parent="globals/BpcxFitContributor" pc="268440197" symbol="setTimerRunning"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="53" lineNum="64" parent="globals/BpcxFitContributor" pc="268440208" symbol="update"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="53" lineNum="67" parent="globals/BpcxFitContributor" pc="268440210" symbol="update"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="53" lineNum="69" parent="globals/BpcxFitContributor" pc="268440221" symbol="update"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="53" lineNum="70" parent="globals/BpcxFitContributor" pc="268440241" symbol="update"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="53" lineNum="71" parent="globals/BpcxFitContributor" pc="268440261" symbol="update"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="53" lineNum="72" parent="globals/BpcxFitContributor" pc="268440281" symbol="update"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="54" lineNum="24" parent="globals/BpcxFitContributor" pc="268440305" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="54" lineNum="25" parent="globals/BpcxFitContributor" pc="268440307" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="54" lineNum="28" parent="globals/BpcxFitContributor" pc="268440330" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="54" lineNum="35" parent="globals/BpcxFitContributor" pc="268440464" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="54" lineNum="42" parent="globals/BpcxFitContributor" pc="268440598" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="54" lineNum="49" parent="globals/BpcxFitContributor" pc="268440732" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="54" lineNum="56" parent="globals/BpcxFitContributor" pc="268440866" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="54" lineNum="57" parent="globals/BpcxFitContributor" pc="268440889" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="54" lineNum="58" parent="globals/BpcxFitContributor" pc="268440912" symbol="initialize"/>
-        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="54" lineNum="59" parent="globals/BpcxFitContributor" pc="268440935" symbol="initialize"/>
-        <entry filename="Rez.mc" id="55" lineNum="83" parent="globals/Rez/Layouts" pc="268440959" symbol="BottomRightLayout"/>
-        <entry filename="Rez.mc" id="55" lineNum="86" parent="globals/Rez/Layouts" pc="268440971" symbol="BottomRightLayout"/>
-        <entry filename="Rez.mc" id="55" lineNum="87" parent="globals/Rez/Layouts" pc="268440999" symbol="BottomRightLayout"/>
-        <entry filename="Rez.mc" id="55" lineNum="88" parent="globals/Rez/Layouts" pc="268441111" symbol="BottomRightLayout"/>
-        <entry filename="Rez.mc" id="55" lineNum="90" parent="globals/Rez/Layouts" pc="268441223" symbol="BottomRightLayout"/>
-        <entry filename="Rez.mc" id="56" lineNum="51" parent="globals/Rez/Layouts" pc="268441260" symbol="TopRightLayout"/>
-        <entry filename="Rez.mc" id="56" lineNum="54" parent="globals/Rez/Layouts" pc="268441272" symbol="TopRightLayout"/>
-        <entry filename="Rez.mc" id="56" lineNum="55" parent="globals/Rez/Layouts" pc="268441300" symbol="TopRightLayout"/>
-        <entry filename="Rez.mc" id="56" lineNum="56" parent="globals/Rez/Layouts" pc="268441412" symbol="TopRightLayout"/>
-        <entry filename="Rez.mc" id="56" lineNum="58" parent="globals/Rez/Layouts" pc="268441524" symbol="TopRightLayout"/>
-        <entry filename="Rez.mc" id="57" lineNum="67" parent="globals/Rez/Layouts" pc="268441561" symbol="BottomLeftLayout"/>
-        <entry filename="Rez.mc" id="57" lineNum="70" parent="globals/Rez/Layouts" pc="268441573" symbol="BottomLeftLayout"/>
-        <entry filename="Rez.mc" id="57" lineNum="71" parent="globals/Rez/Layouts" pc="268441601" symbol="BottomLeftLayout"/>
-        <entry filename="Rez.mc" id="57" lineNum="72" parent="globals/Rez/Layouts" pc="268441713" symbol="BottomLeftLayout"/>
-        <entry filename="Rez.mc" id="57" lineNum="74" parent="globals/Rez/Layouts" pc="268441825" symbol="BottomLeftLayout"/>
-        <entry filename="Rez.mc" id="58" lineNum="35" parent="globals/Rez/Layouts" pc="268441862" symbol="TopLeftLayout"/>
-        <entry filename="Rez.mc" id="58" lineNum="38" parent="globals/Rez/Layouts" pc="268441874" symbol="TopLeftLayout"/>
-        <entry filename="Rez.mc" id="58" lineNum="39" parent="globals/Rez/Layouts" pc="268441902" symbol="TopLeftLayout"/>
-        <entry filename="Rez.mc" id="58" lineNum="40" parent="globals/Rez/Layouts" pc="268442014" symbol="TopLeftLayout"/>
-        <entry filename="Rez.mc" id="58" lineNum="42" parent="globals/Rez/Layouts" pc="268442126" symbol="TopLeftLayout"/>
-        <entry filename="Rez.mc" id="59" lineNum="17" parent="globals/Rez/Layouts" pc="268442163" symbol="MainLayout"/>
-        <entry filename="Rez.mc" id="59" lineNum="19" parent="globals/Rez/Layouts" pc="268442175" symbol="MainLayout"/>
-        <entry filename="Rez.mc" id="59" lineNum="20" parent="globals/Rez/Layouts" pc="268442188" symbol="MainLayout"/>
-        <entry filename="Rez.mc" id="59" lineNum="22" parent="globals/Rez/Layouts" pc="268442201" symbol="MainLayout"/>
-        <entry filename="Rez.mc" id="59" lineNum="23" parent="globals/Rez/Layouts" pc="268442229" symbol="MainLayout"/>
-        <entry filename="Rez.mc" id="59" lineNum="24" parent="globals/Rez/Layouts" pc="268442364" symbol="MainLayout"/>
-        <entry filename="Rez.mc" id="59" lineNum="26" parent="globals/Rez/Layouts" pc="268442499" symbol="MainLayout"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="10" lineNum="60" parent="globals/BpcxDfView" pc="268436362" symbol="compute"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="11" lineNum="109" parent="globals/BpcxDfView" pc="268436410" symbol="onTimerResume"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="11" lineNum="110" parent="globals/BpcxDfView" pc="268436412" symbol="onTimerResume"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="20" parent="globals/BpcxDfView" pc="268436433" symbol="onLayout"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="21" parent="globals/BpcxDfView" pc="268436437" symbol="onLayout"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="24" parent="globals/BpcxDfView" pc="268436456" symbol="onLayout"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="25" parent="globals/BpcxDfView" pc="268436467" symbol="onLayout"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="28" parent="globals/BpcxDfView" pc="268436521" symbol="onLayout"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="29" parent="globals/BpcxDfView" pc="268436532" symbol="onLayout"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="32" parent="globals/BpcxDfView" pc="268436586" symbol="onLayout"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="33" parent="globals/BpcxDfView" pc="268436597" symbol="onLayout"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="36" parent="globals/BpcxDfView" pc="268436651" symbol="onLayout"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="37" parent="globals/BpcxDfView" pc="268436662" symbol="onLayout"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="41" parent="globals/BpcxDfView" pc="268436716" symbol="onLayout"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="42" parent="globals/BpcxDfView" pc="268436767" symbol="onLayout"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="43" parent="globals/BpcxDfView" pc="268436795" symbol="onLayout"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="44" parent="globals/BpcxDfView" pc="268436817" symbol="onLayout"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="45" parent="globals/BpcxDfView" pc="268436845" symbol="onLayout"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="12" lineNum="48" parent="globals/BpcxDfView" pc="268436867" symbol="onLayout"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="13" lineNum="94" parent="globals/BpcxDfView" pc="268436928" symbol="onTimerStart"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="13" lineNum="95" parent="globals/BpcxDfView" pc="268436930" symbol="onTimerStart"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="14" lineNum="104" parent="globals/BpcxDfView" pc="268436951" symbol="onTimerPause"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="14" lineNum="105" parent="globals/BpcxDfView" pc="268436953" symbol="onTimerPause"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="15" lineNum="12" parent="globals/BpcxDfView" pc="268436974" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="15" lineNum="13" parent="globals/BpcxDfView" pc="268436976" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="15" lineNum="14" parent="globals/BpcxDfView" pc="268436994" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="15" lineNum="15" parent="globals/BpcxDfView" pc="268437004" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="16" lineNum="71" parent="globals/BpcxDfView" pc="268437041" symbol="onUpdate"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="16" lineNum="73" parent="globals/BpcxDfView" pc="268437045" symbol="onUpdate"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="16" lineNum="76" parent="globals/BpcxDfView" pc="268437092" symbol="onUpdate"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="16" lineNum="77" parent="globals/BpcxDfView" pc="268437120" symbol="onUpdate"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="16" lineNum="78" parent="globals/BpcxDfView" pc="268437140" symbol="onUpdate"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="16" lineNum="80" parent="globals/BpcxDfView" pc="268437160" symbol="onUpdate"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="16" lineNum="82" parent="globals/BpcxDfView" pc="268437177" symbol="onUpdate"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="16" lineNum="83" parent="globals/BpcxDfView" pc="268437196" symbol="onUpdate"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="16" lineNum="84" parent="globals/BpcxDfView" pc="268437226" symbol="onUpdate"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="16" lineNum="89" parent="globals/BpcxDfView" pc="268437261" symbol="onUpdate"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="17" lineNum="99" parent="globals/BpcxDfView" pc="268437286" symbol="onTimerStop"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" id="17" lineNum="100" parent="globals/BpcxDfView" pc="268437288" symbol="onTimerStop"/>
+        <entry filename="Rez.mc" id="18" lineNum="1" parent="globals/Rez" pc="268437309" symbol="&lt;init&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="19" lineNum="6" parent="globals/BpcxDfApp" pc="268437333" symbol="&lt;init&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="20" lineNum="18" parent="globals/BpcxDfApp" pc="268437352" symbol="onStart"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="20" lineNum="19" parent="globals/BpcxDfApp" pc="268437354" symbol="onStart"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="20" lineNum="20" parent="globals/BpcxDfApp" pc="268437388" symbol="onStart"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="20" lineNum="21" parent="globals/BpcxDfApp" pc="268437430" symbol="onStart"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="20" lineNum="22" parent="globals/BpcxDfApp" pc="268437480" symbol="onStart"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="20" lineNum="24" parent="globals/BpcxDfApp" pc="268437538" symbol="onStart"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="20" lineNum="25" parent="globals/BpcxDfApp" pc="268437562" symbol="onStart"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="20" lineNum="26" parent="globals/BpcxDfApp" pc="268437580" symbol="onStart"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="21" lineNum="37" parent="globals/BpcxDfApp" pc="268437599" symbol="getInitialView"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="21" lineNum="38" parent="globals/BpcxDfApp" pc="268437601" symbol="getInitialView"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="22" lineNum="13" parent="globals/BpcxDfApp" pc="268437650" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="22" lineNum="14" parent="globals/BpcxDfApp" pc="268437652" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="23" lineNum="30" parent="globals/BpcxDfApp" pc="268437671" symbol="onStop"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="23" lineNum="31" parent="globals/BpcxDfApp" pc="268437673" symbol="onStop"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="23" lineNum="32" parent="globals/BpcxDfApp" pc="268437682" symbol="onStop"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" id="23" lineNum="33" parent="globals/BpcxDfApp" pc="268437691" symbol="onStop"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="24" lineNum="139" parent="globals/BpcxProfileModel" pc="268437701" symbol="getCadence"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="24" lineNum="140" parent="globals/BpcxProfileModel" pc="268437703" symbol="getCadence"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="25" lineNum="165" parent="globals/BpcxProfileModel" pc="268437712" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processMotorValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="25" lineNum="166" parent="globals/BpcxProfileModel" pc="268437714" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processMotorValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="25" lineNum="167" parent="globals/BpcxProfileModel" pc="268437737" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processMotorValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="25" lineNum="168" parent="globals/BpcxProfileModel" pc="268437784" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processMotorValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="25" lineNum="169" parent="globals/BpcxProfileModel" pc="268437831" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processMotorValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="25" lineNum="170" parent="globals/BpcxProfileModel" pc="268437872" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processMotorValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="25" lineNum="171" parent="globals/BpcxProfileModel" pc="268437913" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processMotorValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="26" lineNum="154" parent="globals/BpcxProfileModel" pc="268437930" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processBatteryValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="26" lineNum="155" parent="globals/BpcxProfileModel" pc="268437932" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processBatteryValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="26" lineNum="156" parent="globals/BpcxProfileModel" pc="268437955" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processBatteryValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="26" lineNum="157" parent="globals/BpcxProfileModel" pc="268437996" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processBatteryValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="26" lineNum="158" parent="globals/BpcxProfileModel" pc="268438043" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processBatteryValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="26" lineNum="159" parent="globals/BpcxProfileModel" pc="268438090" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processBatteryValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="26" lineNum="160" parent="globals/BpcxProfileModel" pc="268438137" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processBatteryValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="27" lineNum="82" parent="globals/BpcxProfileModel" pc="268438154" symbol="onCharacteristicChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="27" lineNum="83" parent="globals/BpcxProfileModel" pc="268438156" symbol="onCharacteristicChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="27" lineNum="85" parent="globals/BpcxProfileModel" pc="268438286" symbol="onCharacteristicChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="27" lineNum="86" parent="globals/BpcxProfileModel" pc="268438300" symbol="onCharacteristicChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="27" lineNum="89" parent="globals/BpcxProfileModel" pc="268438303" symbol="onCharacteristicChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="27" lineNum="90" parent="globals/BpcxProfileModel" pc="268438317" symbol="onCharacteristicChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="27" lineNum="93" parent="globals/BpcxProfileModel" pc="268438320" symbol="onCharacteristicChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="27" lineNum="94" parent="globals/BpcxProfileModel" pc="268438334" symbol="onCharacteristicChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="27" lineNum="97" parent="globals/BpcxProfileModel" pc="268438337" symbol="onCharacteristicChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="27" lineNum="98" parent="globals/BpcxProfileModel" pc="268438351" symbol="onCharacteristicChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="28" lineNum="105" parent="globals/BpcxProfileModel" pc="268438356" symbol="onDescriptorWrite"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="28" lineNum="106" parent="globals/BpcxProfileModel" pc="268438358" symbol="onDescriptorWrite"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="28" lineNum="107" parent="globals/BpcxProfileModel" pc="268438396" symbol="onDescriptorWrite"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="29" lineNum="112" parent="globals/BpcxProfileModel" pc="268438412" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="29" lineNum="113" parent="globals/BpcxProfileModel" pc="268438416" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="29" lineNum="114" parent="globals/BpcxProfileModel" pc="268438442" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="29" lineNum="117" parent="globals/BpcxProfileModel" pc="268438446" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="29" lineNum="118" parent="globals/BpcxProfileModel" pc="268438462" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="29" lineNum="119" parent="globals/BpcxProfileModel" pc="268438490" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="29" lineNum="120" parent="globals/BpcxProfileModel" pc="268438497" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="29" lineNum="121" parent="globals/BpcxProfileModel" pc="268438541" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="29" lineNum="122" parent="globals/BpcxProfileModel" pc="268438591" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="30" lineNum="176" parent="globals/BpcxProfileModel" pc="268438639" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processDistanceValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="30" lineNum="177" parent="globals/BpcxProfileModel" pc="268438641" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processDistanceValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="30" lineNum="178" parent="globals/BpcxProfileModel" pc="268438664" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processDistanceValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="30" lineNum="179" parent="globals/BpcxProfileModel" pc="268438705" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processDistanceValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="30" lineNum="180" parent="globals/BpcxProfileModel" pc="268438752" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processDistanceValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="30" lineNum="181" parent="globals/BpcxProfileModel" pc="268438793" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processDistanceValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="31" lineNum="145" parent="globals/BpcxProfileModel" pc="268438810" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processRiderValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="31" lineNum="146" parent="globals/BpcxProfileModel" pc="268438812" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processRiderValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="31" lineNum="147" parent="globals/BpcxProfileModel" pc="268438835" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processRiderValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="31" lineNum="148" parent="globals/BpcxProfileModel" pc="268438882" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processRiderValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="31" lineNum="149" parent="globals/BpcxProfileModel" pc="268438923" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processRiderValues&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="32" lineNum="127" parent="globals/BpcxProfileModel" pc="268438940" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processCccdWrite&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="32" lineNum="128" parent="globals/BpcxProfileModel" pc="268438942" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processCccdWrite&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="32" lineNum="129" parent="globals/BpcxProfileModel" pc="268438968" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processCccdWrite&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="32" lineNum="130" parent="globals/BpcxProfileModel" pc="268439015" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processCccdWrite&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="32" lineNum="132" parent="globals/BpcxProfileModel" pc="268439030" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processCccdWrite&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="30" parent="globals/BpcxProfileModel" pc="268439045" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="31" parent="globals/BpcxProfileModel" pc="268439049" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="32" parent="globals/BpcxProfileModel" pc="268439063" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="34" parent="globals/BpcxProfileModel" pc="268439077" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="35" parent="globals/BpcxProfileModel" pc="268439087" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="37" parent="globals/BpcxProfileModel" pc="268439114" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="38" parent="globals/BpcxProfileModel" pc="268439127" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="39" parent="globals/BpcxProfileModel" pc="268439140" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="40" parent="globals/BpcxProfileModel" pc="268439153" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="41" parent="globals/BpcxProfileModel" pc="268439166" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="42" parent="globals/BpcxProfileModel" pc="268439179" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="43" parent="globals/BpcxProfileModel" pc="268439192" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="44" parent="globals/BpcxProfileModel" pc="268439205" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="45" parent="globals/BpcxProfileModel" pc="268439218" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="46" parent="globals/BpcxProfileModel" pc="268439231" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="47" parent="globals/BpcxProfileModel" pc="268439244" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="48" parent="globals/BpcxProfileModel" pc="268439257" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="49" parent="globals/BpcxProfileModel" pc="268439270" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="51" parent="globals/BpcxProfileModel" pc="268439283" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="53" parent="globals/BpcxProfileModel" pc="268439297" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="54" parent="globals/BpcxProfileModel" pc="268439307" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="55" parent="globals/BpcxProfileModel" pc="268439314" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="56" parent="globals/BpcxProfileModel" pc="268439335" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="57" parent="globals/BpcxProfileModel" pc="268439342" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="60" parent="globals/BpcxProfileModel" pc="268439372" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="61" parent="globals/BpcxProfileModel" pc="268439393" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="62" parent="globals/BpcxProfileModel" pc="268439400" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="65" parent="globals/BpcxProfileModel" pc="268439430" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="66" parent="globals/BpcxProfileModel" pc="268439451" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="67" parent="globals/BpcxProfileModel" pc="268439458" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="70" parent="globals/BpcxProfileModel" pc="268439488" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="71" parent="globals/BpcxProfileModel" pc="268439509" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="72" parent="globals/BpcxProfileModel" pc="268439516" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileModel.mc" id="33" lineNum="76" parent="globals/BpcxProfileModel" pc="268439549" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="34" lineNum="4" parent="globals/BpcxDelegate" pc="268439562" symbol="&lt;init&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="35" lineNum="70" parent="globals/BpcxDelegate" pc="268439581" symbol="onCharacteristicChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="35" lineNum="71" parent="globals/BpcxDelegate" pc="268439585" symbol="onCharacteristicChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="35" lineNum="72" parent="globals/BpcxDelegate" pc="268439595" symbol="onCharacteristicChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="35" lineNum="73" parent="globals/BpcxDelegate" pc="268439602" symbol="onCharacteristicChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="35" lineNum="74" parent="globals/BpcxDelegate" pc="268439616" symbol="onCharacteristicChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="36" lineNum="27" parent="globals/BpcxDelegate" pc="268439648" symbol="notifyCharacteristicChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="36" lineNum="28" parent="globals/BpcxDelegate" pc="268439650" symbol="notifyCharacteristicChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="37" lineNum="87" parent="globals/BpcxDelegate" pc="268439670" symbol="notifyConnection"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="37" lineNum="88" parent="globals/BpcxDelegate" pc="268439672" symbol="notifyConnection"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="38" lineNum="81" parent="globals/BpcxDelegate" pc="268439692" symbol="notifyScanResult"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="38" lineNum="82" parent="globals/BpcxDelegate" pc="268439694" symbol="notifyScanResult"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="39" lineNum="58" parent="globals/BpcxDelegate" pc="268439714" symbol="onDescriptorWrite"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="39" lineNum="59" parent="globals/BpcxDelegate" pc="268439718" symbol="onDescriptorWrite"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="39" lineNum="60" parent="globals/BpcxDelegate" pc="268439728" symbol="onDescriptorWrite"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="39" lineNum="61" parent="globals/BpcxDelegate" pc="268439735" symbol="onDescriptorWrite"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="39" lineNum="62" parent="globals/BpcxDelegate" pc="268439749" symbol="onDescriptorWrite"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="40" lineNum="46" parent="globals/BpcxDelegate" pc="268439781" symbol="onConnectedStateChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="40" lineNum="47" parent="globals/BpcxDelegate" pc="268439785" symbol="onConnectedStateChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="40" lineNum="48" parent="globals/BpcxDelegate" pc="268439795" symbol="onConnectedStateChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="40" lineNum="49" parent="globals/BpcxDelegate" pc="268439802" symbol="onConnectedStateChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="40" lineNum="50" parent="globals/BpcxDelegate" pc="268439816" symbol="onConnectedStateChanged"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="41" lineNum="106" parent="globals/BpcxDelegate" pc="268439846" symbol="&lt;globals/BpcxDelegate/&lt;&gt;contains&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="41" lineNum="107" parent="globals/BpcxDelegate" pc="268439850" symbol="&lt;globals/BpcxDelegate/&lt;&gt;contains&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="41" lineNum="109" parent="globals/BpcxDelegate" pc="268439870" symbol="&lt;globals/BpcxDelegate/&lt;&gt;contains&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="41" lineNum="110" parent="globals/BpcxDelegate" pc="268439905" symbol="&lt;globals/BpcxDelegate/&lt;&gt;contains&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="41" lineNum="111" parent="globals/BpcxDelegate" pc="268439921" symbol="&lt;globals/BpcxDelegate/&lt;&gt;contains&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="41" lineNum="115" parent="globals/BpcxDelegate" pc="268439943" symbol="&lt;globals/BpcxDelegate/&lt;&gt;contains&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="42" lineNum="21" parent="globals/BpcxDelegate" pc="268439946" symbol="notifyDescriptorWrite"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="42" lineNum="22" parent="globals/BpcxDelegate" pc="268439948" symbol="notifyDescriptorWrite"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="43" lineNum="93" parent="globals/BpcxDelegate" pc="268439968" symbol="&lt;globals/BpcxDelegate/&lt;&gt;broadcastScanResult&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="43" lineNum="94" parent="globals/BpcxDelegate" pc="268439972" symbol="&lt;globals/BpcxDelegate/&lt;&gt;broadcastScanResult&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="43" lineNum="95" parent="globals/BpcxDelegate" pc="268439982" symbol="&lt;globals/BpcxDelegate/&lt;&gt;broadcastScanResult&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="43" lineNum="96" parent="globals/BpcxDelegate" pc="268439989" symbol="&lt;globals/BpcxDelegate/&lt;&gt;broadcastScanResult&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="43" lineNum="97" parent="globals/BpcxDelegate" pc="268440003" symbol="&lt;globals/BpcxDelegate/&lt;&gt;broadcastScanResult&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="44" lineNum="14" parent="globals/BpcxDelegate" pc="268440033" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="44" lineNum="15" parent="globals/BpcxDelegate" pc="268440035" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="44" lineNum="16" parent="globals/BpcxDelegate" pc="268440053" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="45" lineNum="33" parent="globals/BpcxDelegate" pc="268440064" symbol="onScanResults"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="45" lineNum="34" parent="globals/BpcxDelegate" pc="268440068" symbol="onScanResults"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="45" lineNum="35" parent="globals/BpcxDelegate" pc="268440088" symbol="onScanResults"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="45" lineNum="36" parent="globals/BpcxDelegate" pc="268440106" symbol="onScanResults"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDelegate.mc" id="45" lineNum="37" parent="globals/BpcxDelegate" pc="268440145" symbol="onScanResults"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="46" lineNum="36" parent="globals/BpcxDeviceManager" pc="268440182" symbol="procScanResult"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="46" lineNum="38" parent="globals/BpcxDeviceManager" pc="268440184" symbol="procScanResult"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="46" lineNum="39" parent="globals/BpcxDeviceManager" pc="268440204" symbol="procScanResult"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="46" lineNum="40" parent="globals/BpcxDeviceManager" pc="268440225" symbol="procScanResult"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="47" lineNum="30" parent="globals/BpcxDeviceManager" pc="268440247" symbol="start"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="47" lineNum="31" parent="globals/BpcxDeviceManager" pc="268440249" symbol="start"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="48" lineNum="76" parent="globals/BpcxDeviceManager" pc="268440271" symbol="isConnected"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="48" lineNum="77" parent="globals/BpcxDeviceManager" pc="268440273" symbol="isConnected"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="48" lineNum="78" parent="globals/BpcxDeviceManager" pc="268440286" symbol="isConnected"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="48" lineNum="80" parent="globals/BpcxDeviceManager" pc="268440307" symbol="isConnected"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="49" lineNum="65" parent="globals/BpcxDeviceManager" pc="268440310" symbol="getActiveProfile"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="49" lineNum="66" parent="globals/BpcxDeviceManager" pc="268440312" symbol="getActiveProfile"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="49" lineNum="67" parent="globals/BpcxDeviceManager" pc="268440325" symbol="getActiveProfile"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="49" lineNum="68" parent="globals/BpcxDeviceManager" pc="268440346" symbol="getActiveProfile"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="49" lineNum="71" parent="globals/BpcxDeviceManager" pc="268440354" symbol="getActiveProfile"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="50" lineNum="57" parent="globals/BpcxDeviceManager" pc="268440363" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;procDeviceConnected&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="50" lineNum="58" parent="globals/BpcxDeviceManager" pc="268440365" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;procDeviceConnected&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="50" lineNum="59" parent="globals/BpcxDeviceManager" pc="268440378" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;procDeviceConnected&gt;"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="51" lineNum="18" parent="globals/BpcxDeviceManager" pc="268440415" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="51" lineNum="19" parent="globals/BpcxDeviceManager" pc="268440417" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="51" lineNum="21" parent="globals/BpcxDeviceManager" pc="268440426" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="51" lineNum="22" parent="globals/BpcxDeviceManager" pc="268440440" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="51" lineNum="24" parent="globals/BpcxDeviceManager" pc="268440454" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="51" lineNum="25" parent="globals/BpcxDeviceManager" pc="268440464" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="51" lineNum="26" parent="globals/BpcxDeviceManager" pc="268440474" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="52" lineNum="46" parent="globals/BpcxDeviceManager" pc="268440485" symbol="procConnection"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="52" lineNum="47" parent="globals/BpcxDeviceManager" pc="268440487" symbol="procConnection"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="52" lineNum="48" parent="globals/BpcxDeviceManager" pc="268440501" symbol="procConnection"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="52" lineNum="49" parent="globals/BpcxDeviceManager" pc="268440511" symbol="procConnection"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="52" lineNum="50" parent="globals/BpcxDeviceManager" pc="268440523" symbol="procConnection"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleDeviceManager.mc" id="52" lineNum="52" parent="globals/BpcxDeviceManager" pc="268440544" symbol="procConnection"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="53" lineNum="78" parent="globals/BpcxFitContributor" pc="268440554" symbol="setTimerRunning"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="53" lineNum="79" parent="globals/BpcxFitContributor" pc="268440556" symbol="setTimerRunning"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="54" lineNum="64" parent="globals/BpcxFitContributor" pc="268440567" symbol="update"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="54" lineNum="67" parent="globals/BpcxFitContributor" pc="268440569" symbol="update"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="54" lineNum="69" parent="globals/BpcxFitContributor" pc="268440580" symbol="update"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="54" lineNum="70" parent="globals/BpcxFitContributor" pc="268440600" symbol="update"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="54" lineNum="71" parent="globals/BpcxFitContributor" pc="268440620" symbol="update"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="54" lineNum="72" parent="globals/BpcxFitContributor" pc="268440640" symbol="update"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="55" lineNum="24" parent="globals/BpcxFitContributor" pc="268440664" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="55" lineNum="25" parent="globals/BpcxFitContributor" pc="268440666" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="55" lineNum="28" parent="globals/BpcxFitContributor" pc="268440689" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="55" lineNum="35" parent="globals/BpcxFitContributor" pc="268440823" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="55" lineNum="42" parent="globals/BpcxFitContributor" pc="268440957" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="55" lineNum="49" parent="globals/BpcxFitContributor" pc="268441091" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="55" lineNum="56" parent="globals/BpcxFitContributor" pc="268441225" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="55" lineNum="57" parent="globals/BpcxFitContributor" pc="268441248" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="55" lineNum="58" parent="globals/BpcxFitContributor" pc="268441271" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfFitContributor.mc" id="55" lineNum="59" parent="globals/BpcxFitContributor" pc="268441294" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDataModelFactory.mc" id="56" lineNum="26" parent="globals/BpcxDataModelFactory" pc="268441318" symbol="getProfileModel"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDataModelFactory.mc" id="56" lineNum="27" parent="globals/BpcxDataModelFactory" pc="268441322" symbol="getProfileModel"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDataModelFactory.mc" id="56" lineNum="28" parent="globals/BpcxDataModelFactory" pc="268441332" symbol="getProfileModel"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDataModelFactory.mc" id="56" lineNum="29" parent="globals/BpcxDataModelFactory" pc="268441339" symbol="getProfileModel"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDataModelFactory.mc" id="56" lineNum="30" parent="globals/BpcxDataModelFactory" pc="268441353" symbol="getProfileModel"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDataModelFactory.mc" id="56" lineNum="34" parent="globals/BpcxDataModelFactory" pc="268441371" symbol="getProfileModel"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDataModelFactory.mc" id="56" lineNum="35" parent="globals/BpcxDataModelFactory" pc="268441417" symbol="getProfileModel"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDataModelFactory.mc" id="56" lineNum="37" parent="globals/BpcxDataModelFactory" pc="268441436" symbol="getProfileModel"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDataModelFactory.mc" id="57" lineNum="17" parent="globals/BpcxDataModelFactory" pc="268441439" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDataModelFactory.mc" id="57" lineNum="18" parent="globals/BpcxDataModelFactory" pc="268441441" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDataModelFactory.mc" id="57" lineNum="19" parent="globals/BpcxDataModelFactory" pc="268441450" symbol="initialize"/>
+        <entry filename="/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDataModelFactory.mc" id="57" lineNum="20" parent="globals/BpcxDataModelFactory" pc="268441460" symbol="initialize"/>
+        <entry filename="Rez.mc" id="58" lineNum="83" parent="globals/Rez/Layouts" pc="268441471" symbol="BottomRightLayout"/>
+        <entry filename="Rez.mc" id="58" lineNum="86" parent="globals/Rez/Layouts" pc="268441483" symbol="BottomRightLayout"/>
+        <entry filename="Rez.mc" id="58" lineNum="87" parent="globals/Rez/Layouts" pc="268441511" symbol="BottomRightLayout"/>
+        <entry filename="Rez.mc" id="58" lineNum="88" parent="globals/Rez/Layouts" pc="268441623" symbol="BottomRightLayout"/>
+        <entry filename="Rez.mc" id="58" lineNum="90" parent="globals/Rez/Layouts" pc="268441735" symbol="BottomRightLayout"/>
+        <entry filename="Rez.mc" id="59" lineNum="51" parent="globals/Rez/Layouts" pc="268441772" symbol="TopRightLayout"/>
+        <entry filename="Rez.mc" id="59" lineNum="54" parent="globals/Rez/Layouts" pc="268441784" symbol="TopRightLayout"/>
+        <entry filename="Rez.mc" id="59" lineNum="55" parent="globals/Rez/Layouts" pc="268441812" symbol="TopRightLayout"/>
+        <entry filename="Rez.mc" id="59" lineNum="56" parent="globals/Rez/Layouts" pc="268441924" symbol="TopRightLayout"/>
+        <entry filename="Rez.mc" id="59" lineNum="58" parent="globals/Rez/Layouts" pc="268442036" symbol="TopRightLayout"/>
+        <entry filename="Rez.mc" id="60" lineNum="67" parent="globals/Rez/Layouts" pc="268442073" symbol="BottomLeftLayout"/>
+        <entry filename="Rez.mc" id="60" lineNum="70" parent="globals/Rez/Layouts" pc="268442085" symbol="BottomLeftLayout"/>
+        <entry filename="Rez.mc" id="60" lineNum="71" parent="globals/Rez/Layouts" pc="268442113" symbol="BottomLeftLayout"/>
+        <entry filename="Rez.mc" id="60" lineNum="72" parent="globals/Rez/Layouts" pc="268442225" symbol="BottomLeftLayout"/>
+        <entry filename="Rez.mc" id="60" lineNum="74" parent="globals/Rez/Layouts" pc="268442337" symbol="BottomLeftLayout"/>
+        <entry filename="Rez.mc" id="61" lineNum="35" parent="globals/Rez/Layouts" pc="268442374" symbol="TopLeftLayout"/>
+        <entry filename="Rez.mc" id="61" lineNum="38" parent="globals/Rez/Layouts" pc="268442386" symbol="TopLeftLayout"/>
+        <entry filename="Rez.mc" id="61" lineNum="39" parent="globals/Rez/Layouts" pc="268442414" symbol="TopLeftLayout"/>
+        <entry filename="Rez.mc" id="61" lineNum="40" parent="globals/Rez/Layouts" pc="268442526" symbol="TopLeftLayout"/>
+        <entry filename="Rez.mc" id="61" lineNum="42" parent="globals/Rez/Layouts" pc="268442638" symbol="TopLeftLayout"/>
+        <entry filename="Rez.mc" id="62" lineNum="17" parent="globals/Rez/Layouts" pc="268442675" symbol="MainLayout"/>
+        <entry filename="Rez.mc" id="62" lineNum="19" parent="globals/Rez/Layouts" pc="268442687" symbol="MainLayout"/>
+        <entry filename="Rez.mc" id="62" lineNum="20" parent="globals/Rez/Layouts" pc="268442700" symbol="MainLayout"/>
+        <entry filename="Rez.mc" id="62" lineNum="22" parent="globals/Rez/Layouts" pc="268442713" symbol="MainLayout"/>
+        <entry filename="Rez.mc" id="62" lineNum="23" parent="globals/Rez/Layouts" pc="268442741" symbol="MainLayout"/>
+        <entry filename="Rez.mc" id="62" lineNum="24" parent="globals/Rez/Layouts" pc="268442876" symbol="MainLayout"/>
+        <entry filename="Rez.mc" id="62" lineNum="26" parent="globals/Rez/Layouts" pc="268443011" symbol="MainLayout"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
-        <entry field="true" id="25" symbol="&lt;globals/BpcxDfView/&lt;&gt;_fitContributor&gt;"/>
-        <entry field="true" id="89" symbol="AssistanceLevelUnitField"/>
-        <entry id="48" method="true" symbol="getCadence"/>
-        <entry field="true" id="78" symbol="&lt;globals/BpcxFitContributor/&lt;&gt;_speedField&gt;"/>
-        <entry id="63" method="true" symbol="notifyDescriptorWrite"/>
+        <entry field="true" id="26" symbol="&lt;globals/BpcxDfView/&lt;&gt;_fitContributor&gt;"/>
+        <entry field="true" id="97" symbol="AssistanceLevelUnitField"/>
+        <entry id="50" method="true" symbol="getCadence"/>
+        <entry field="true" id="81" symbol="&lt;globals/BpcxFitContributor/&lt;&gt;_speedField&gt;"/>
+        <entry id="65" method="true" symbol="notifyDescriptorWrite"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
-        <entry id="12" object="true" symbol="BpcxDfView"/>
+        <entry id="13" object="true" symbol="BpcxDfView"/>
         <entry id="7" module="true" symbol="globals/Rez/Menus"/>
         <entry id="8389849" symbol="units"/>
-        <entry id="84" method="true" symbol="MainLayout"/>
-        <entry id="14" object="true" symbol="BpcxProfileManager"/>
-        <entry field="true" id="91" symbol="BatteryUnitField"/>
-        <entry field="true" id="43" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_riderCadence&gt;"/>
-        <entry id="53" method="true" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processRiderValues&gt;"/>
-        <entry field="true" id="19" symbol="BPCX_RIDER_CHARACTERISTICS"/>
-        <entry field="true" id="79" symbol="&lt;globals/BpcxFitContributor/&lt;&gt;_timerRunning&gt;"/>
+        <entry id="92" method="true" symbol="MainLayout"/>
+        <entry id="15" object="true" symbol="BpcxProfileManager"/>
+        <entry field="true" id="99" symbol="BatteryUnitField"/>
+        <entry field="true" id="45" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_riderCadence&gt;"/>
+        <entry id="55" method="true" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processRiderValues&gt;"/>
+        <entry field="true" id="20" symbol="BPCX_RIDER_CHARACTERISTICS"/>
+        <entry field="true" id="86" symbol="&lt;globals/BpcxDataModelFactory/&lt;&gt;_profileManager&gt;"/>
+        <entry field="true" id="82" symbol="&lt;globals/BpcxFitContributor/&lt;&gt;_timerRunning&gt;"/>
         <entry id="8389748" method="true" symbol="onTimerStop"/>
-        <entry field="true" id="70" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;_sampleInProgress&gt;"/>
-        <entry field="true" id="41" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_profileManager&gt;"/>
-        <entry field="true" id="37" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_motorSupportLevel&gt;"/>
-        <entry field="true" id="24" symbol="&lt;globals/BpcxDfView/&lt;&gt;_deviceManager&gt;"/>
+        <entry field="true" id="73" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;_sampleInProgress&gt;"/>
+        <entry field="true" id="43" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_profileManager&gt;"/>
+        <entry field="true" id="39" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_motorSupportLevel&gt;"/>
+        <entry field="true" id="25" symbol="&lt;globals/BpcxDfView/&lt;&gt;_deviceManager&gt;"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="92" symbol="CadenceField"/>
-        <entry id="51" method="true" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processDistanceValues&gt;"/>
-        <entry id="60" method="true" symbol="&lt;globals/BpcxDelegate/&lt;&gt;contains&gt;"/>
+        <entry field="true" id="100" symbol="CadenceField"/>
+        <entry id="53" method="true" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processDistanceValues&gt;"/>
+        <entry id="62" method="true" symbol="&lt;globals/BpcxDelegate/&lt;&gt;contains&gt;"/>
         <entry id="8391256" method="true" symbol="onScanResults"/>
-        <entry id="72" method="true" symbol="procConnection"/>
-        <entry field="true" id="39" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_odometer&gt;"/>
-        <entry id="13" object="true" symbol="BpcxFitContributor"/>
+        <entry id="75" method="true" symbol="procConnection"/>
+        <entry id="9" object="true" symbol="BpcxDataModelFactory"/>
+        <entry field="true" id="41" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_odometer&gt;"/>
+        <entry id="14" object="true" symbol="BpcxFitContributor"/>
         <entry id="8389747" method="true" symbol="onTimerStart"/>
-        <entry id="59" method="true" symbol="&lt;globals/BpcxDelegate/&lt;&gt;broadcastScanResult&gt;"/>
-        <entry field="true" id="87" symbol="AppName"/>
-        <entry field="true" id="44" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_riderTorque&gt;"/>
-        <entry field="true" id="65" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;_configComplete&gt;"/>
-        <entry field="true" id="30" symbol="&lt;globals/BpcxDfApp/&lt;&gt;_profileManager&gt;"/>
+        <entry id="61" method="true" symbol="&lt;globals/BpcxDelegate/&lt;&gt;broadcastScanResult&gt;"/>
+        <entry field="true" id="95" symbol="AppName"/>
+        <entry field="true" id="46" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_riderTorque&gt;"/>
+        <entry field="true" id="67" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;_configComplete&gt;"/>
+        <entry field="true" id="32" symbol="&lt;globals/BpcxDfApp/&lt;&gt;_profileManager&gt;"/>
         <entry id="8391262" method="true" symbol="onDescriptorWrite"/>
-        <entry field="true" id="40" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_pendingNotifies&gt;"/>
+        <entry field="true" id="42" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_pendingNotifies&gt;"/>
         <entry id="8389749" method="true" symbol="onTimerPause"/>
         <entry id="8" module="true" symbol="globals/Rez/Strings"/>
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry field="true" id="30" symbol="&lt;globals/BpcxDfApp/&lt;&gt;_dataFactory&gt;"/>
         <entry id="8388631" module="true" symbol="Activity"/>
-        <entry field="true" id="33" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_batteryPower&gt;"/>
-        <entry field="true" id="54" symbol="&lt;globals/BpcxDelegate/&lt;&gt;_onCharacteristicChanged&gt;"/>
+        <entry field="true" id="35" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_batteryPower&gt;"/>
+        <entry field="true" id="56" symbol="&lt;globals/BpcxDelegate/&lt;&gt;_onCharacteristicChanged&gt;"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
-        <entry field="true" id="36" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_motorRpm&gt;"/>
-        <entry field="true" id="34" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_batteryVoltage&gt;"/>
+        <entry field="true" id="38" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_motorRpm&gt;"/>
+        <entry field="true" id="36" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_batteryVoltage&gt;"/>
         <entry field="true" id="8389138" symbol="label"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
         <entry id="8391340" symbol="descriptors"/>
-        <entry field="true" id="32" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_batteryCurrent&gt;"/>
-        <entry field="true" id="35" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_motorPower&gt;"/>
-        <entry field="true" id="18" symbol="BPCX_MOTOR_CHARACTERISTICS"/>
+        <entry field="true" id="34" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_batteryCurrent&gt;"/>
+        <entry field="true" id="37" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_motorPower&gt;"/>
+        <entry field="true" id="19" symbol="BPCX_MOTOR_CHARACTERISTICS"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry field="true" id="8389065" symbol="locY"/>
         <entry field="true" id="8389064" symbol="locX"/>
-        <entry field="true" id="56" symbol="&lt;globals/BpcxDelegate/&lt;&gt;_onDescriptorWrite&gt;"/>
-        <entry field="true" id="57" symbol="&lt;globals/BpcxDelegate/&lt;&gt;_onScanResult&gt;"/>
+        <entry field="true" id="58" symbol="&lt;globals/BpcxDelegate/&lt;&gt;_onDescriptorWrite&gt;"/>
+        <entry field="true" id="59" symbol="&lt;globals/BpcxDelegate/&lt;&gt;_onScanResult&gt;"/>
         <entry id="8391263" method="true" symbol="onCharacteristicChanged"/>
-        <entry field="true" id="22" symbol="&lt;globals/BpcxProfileManager/&lt;&gt;_bpcxProfileDef&gt;"/>
+        <entry field="true" id="23" symbol="&lt;globals/BpcxProfileManager/&lt;&gt;_bpcxProfileDef&gt;"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
         <entry id="8391258" method="true" symbol="onConnectedStateChanged"/>
-        <entry id="27" module="true" symbol="Menus"/>
+        <entry id="28" module="true" symbol="Menus"/>
         <entry id="8389275" method="true" symbol="getApp"/>
         <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
-        <entry field="true" id="20" symbol="BPCX_SENSOR_LOCATION"/>
+        <entry field="true" id="21" symbol="BPCX_SENSOR_LOCATION"/>
+        <entry field="true" id="84" symbol="&lt;globals/BpcxDataModelFactory/&lt;&gt;_delegate&gt;"/>
+        <entry id="74" method="true" symbol="getActiveProfile"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
-        <entry field="true" id="66" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;_delegate&gt;"/>
+        <entry field="true" id="69" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;_delegate&gt;"/>
         <entry field="true" id="8389063" symbol="identifier"/>
-        <entry field="true" id="88" symbol="AssistanceLevelField"/>
+        <entry field="true" id="96" symbol="AssistanceLevelField"/>
         <entry id="8389349" symbol="justification"/>
-        <entry field="true" id="46" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_speed&gt;"/>
+        <entry field="true" id="48" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_speed&gt;"/>
         <entry id="8389137" method="true" symbol="compute"/>
-        <entry field="true" id="17" symbol="BPCX_DISTANCE_CHARACTERISTICS"/>
-        <entry field="true" id="55" symbol="&lt;globals/BpcxDelegate/&lt;&gt;_onConnection&gt;"/>
+        <entry field="true" id="18" symbol="BPCX_DISTANCE_CHARACTERISTICS"/>
+        <entry field="true" id="57" symbol="&lt;globals/BpcxDelegate/&lt;&gt;_onConnection&gt;"/>
         <entry id="8389131" method="true" symbol="setColor"/>
         <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
-        <entry field="true" id="90" symbol="BatteryField"/>
+        <entry field="true" id="98" symbol="BatteryField"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
-        <entry field="true" id="94" symbol="SpeedField"/>
-        <entry field="true" id="75" symbol="&lt;globals/BpcxFitContributor/&lt;&gt;_assistanceLevelField&gt;"/>
-        <entry field="true" id="58" symbol="&lt;globals/BpcxDelegate/&lt;&gt;_profileManager&gt;"/>
-        <entry id="61" method="true" symbol="notifyCharacteristicChanged"/>
-        <entry id="85" method="true" symbol="TopLeftLayout"/>
-        <entry id="11" object="true" symbol="BpcxDfApp"/>
-        <entry field="true" id="95" symbol="SpeedUnitField"/>
-        <entry field="true" id="77" symbol="&lt;globals/BpcxFitContributor/&lt;&gt;_cadenceField&gt;"/>
-        <entry id="80" method="true" symbol="setTimerRunning"/>
-        <entry field="true" id="67" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;_device&gt;"/>
+        <entry field="true" id="102" symbol="SpeedField"/>
+        <entry field="true" id="68" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;_dataModelFactory&gt;"/>
+        <entry field="true" id="78" symbol="&lt;globals/BpcxFitContributor/&lt;&gt;_assistanceLevelField&gt;"/>
+        <entry field="true" id="60" symbol="&lt;globals/BpcxDelegate/&lt;&gt;_profileManager&gt;"/>
+        <entry id="8391244" method="true" symbol="isConnected"/>
+        <entry id="63" method="true" symbol="notifyCharacteristicChanged"/>
+        <entry id="93" method="true" symbol="TopLeftLayout"/>
+        <entry id="12" object="true" symbol="BpcxDfApp"/>
+        <entry field="true" id="103" symbol="SpeedUnitField"/>
+        <entry field="true" id="80" symbol="&lt;globals/BpcxFitContributor/&lt;&gt;_cadenceField&gt;"/>
+        <entry id="83" method="true" symbol="setTimerRunning"/>
+        <entry field="true" id="70" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;_device&gt;"/>
         <entry id="8388644" module="true" symbol="System"/>
-        <entry id="23" method="true" symbol="registerProfiles"/>
-        <entry field="true" id="29" symbol="&lt;globals/BpcxDfApp/&lt;&gt;_deviceManager&gt;"/>
+        <entry id="24" method="true" symbol="registerProfiles"/>
+        <entry field="true" id="31" symbol="&lt;globals/BpcxDfApp/&lt;&gt;_deviceManager&gt;"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
-        <entry id="82" method="true" symbol="BottomLeftLayout"/>
-        <entry id="83" method="true" symbol="BottomRightLayout"/>
-        <entry field="true" id="21" symbol="BPCX_SERVICE"/>
+        <entry id="90" method="true" symbol="BottomLeftLayout"/>
+        <entry id="91" method="true" symbol="BottomRightLayout"/>
+        <entry field="true" id="22" symbol="BPCX_SERVICE"/>
         <entry id="8388640" module="true" symbol="Lang"/>
         <entry id="8390088" module="true" object="true" symbol="JsonData"/>
         <entry field="true" id="8389130" symbol="mColor"/>
         <entry id="8389068" method="true" symbol="draw"/>
-        <entry field="true" id="93" symbol="CadenceUnitField"/>
-        <entry field="true" id="81" symbol="LauncherIcon"/>
+        <entry field="true" id="101" symbol="CadenceUnitField"/>
+        <entry field="true" id="89" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
-        <entry field="true" id="76" symbol="&lt;globals/BpcxFitContributor/&lt;&gt;_batteryField&gt;"/>
-        <entry id="64" method="true" symbol="notifyScanResult"/>
-        <entry field="true" id="45" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_service&gt;"/>
-        <entry id="73" method="true" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;procDeviceConnected&gt;"/>
-        <entry id="47" method="true" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;"/>
-        <entry field="true" id="69" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;_profileModel&gt;"/>
+        <entry field="true" id="79" symbol="&lt;globals/BpcxFitContributor/&lt;&gt;_batteryField&gt;"/>
+        <entry id="66" method="true" symbol="notifyScanResult"/>
+        <entry field="true" id="47" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_service&gt;"/>
+        <entry id="76" method="true" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;procDeviceConnected&gt;"/>
+        <entry id="49" method="true" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;"/>
+        <entry field="true" id="72" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;_profileModel&gt;"/>
         <entry id="8389350" module="true" symbol="globals"/>
         <entry id="8391334" symbol="uuid"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
         <entry id="8390146" module="true" object="true" symbol="Background"/>
-        <entry id="9" object="true" symbol="BpcxDelegate"/>
-        <entry field="true" id="68" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;_profileManager&gt;"/>
+        <entry id="10" object="true" symbol="BpcxDelegate"/>
+        <entry field="true" id="71" symbol="&lt;globals/BpcxDeviceManager/&lt;&gt;_profileManager&gt;"/>
         <entry id="8391193" module="true" symbol="BluetoothLowEnergy"/>
         <entry id="8388702" method="true" symbol="initialize"/>
+        <entry field="true" id="85" symbol="&lt;globals/BpcxDataModelFactory/&lt;&gt;_device&gt;"/>
         <entry id="8389279" method="true" symbol="onStart"/>
-        <entry field="true" id="28" symbol="&lt;globals/BpcxDfApp/&lt;&gt;_bleDelegate&gt;"/>
+        <entry field="true" id="29" symbol="&lt;globals/BpcxDfApp/&lt;&gt;_bleDelegate&gt;"/>
         <entry id="8389780" module="true" symbol="FitContributor"/>
-        <entry id="52" method="true" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processMotorValues&gt;"/>
-        <entry id="49" method="true" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processBatteryValues&gt;"/>
+        <entry id="54" method="true" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processMotorValues&gt;"/>
+        <entry id="51" method="true" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processBatteryValues&gt;"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry id="8389847" symbol="mesgType"/>
         <entry id="8389347" symbol="color"/>
         <entry id="8391341" symbol="characteristics"/>
-        <entry field="true" id="16" symbol="BPCX_BATTERY_CHARACTERISTICS"/>
-        <entry id="26" module="true" symbol="Layouts"/>
+        <entry field="true" id="17" symbol="BPCX_BATTERY_CHARACTERISTICS"/>
+        <entry id="27" module="true" symbol="Layouts"/>
         <entry id="8388698" method="true" symbol="start"/>
-        <entry field="true" id="31" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_batteryCharge&gt;"/>
-        <entry id="15" object="true" symbol="BpcxProfileModel"/>
+        <entry field="true" id="33" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_batteryCharge&gt;"/>
+        <entry id="16" object="true" symbol="BpcxProfileModel"/>
         <entry id="8389750" method="true" symbol="onTimerResume"/>
-        <entry id="71" method="true" symbol="getProfileModel"/>
+        <entry id="88" method="true" symbol="getProfileModel"/>
         <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
-        <entry field="true" id="38" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_motorTorque&gt;"/>
+        <entry field="true" id="40" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_motorTorque&gt;"/>
         <entry id="8390514" method="true" symbol="update"/>
-        <entry field="true" id="42" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_remainingDistance&gt;"/>
-        <entry id="62" method="true" symbol="notifyConnection"/>
+        <entry field="true" id="44" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;_remainingDistance&gt;"/>
+        <entry id="64" method="true" symbol="notifyConnection"/>
         <entry id="8388635" module="true" symbol="Application"/>
-        <entry id="74" method="true" symbol="procScanResult"/>
-        <entry id="10" object="true" symbol="BpcxDeviceManager"/>
-        <entry id="86" method="true" symbol="TopRightLayout"/>
-        <entry id="50" method="true" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processCccdWrite&gt;"/>
+        <entry id="77" method="true" symbol="procScanResult"/>
+        <entry id="11" object="true" symbol="BpcxDeviceManager"/>
+        <entry field="true" id="87" symbol="&lt;globals/BpcxDataModelFactory/&lt;&gt;_profileModel&gt;"/>
+        <entry id="94" method="true" symbol="TopRightLayout"/>
+        <entry id="52" method="true" symbol="&lt;globals/BpcxProfileModel/&lt;&gt;processCccdWrite&gt;"/>
     </symbolTable>
     <localVars>
         <entry endPc="268436152" name="exception" stackId="1" startPc="268436109"/>
         <entry arg="true" endPc="268436190" name="color" stackId="1" startPc="268436178"/>
         <entry endPc="268436248" name="dictionary" stackId="1" startPc="268436195"/>
         <entry arg="true" endPc="268436289" name="dc" stackId="1" startPc="268436250"/>
-        <entry arg="true" endPc="268436386" name="info" stackId="1" startPc="268436309"/>
-        <entry endPc="268436385" name="profileModel" stackId="2" startPc="268436313"/>
-        <entry arg="true" endPc="268436904" name="dc" stackId="1" startPc="268436410"/>
-        <entry endPc="268436903" name="obscurityFlags" stackId="2" startPc="268436414"/>
-        <entry endPc="268436843" name="labelView" stackId="3" startPc="268436693"/>
-        <entry endPc="268436843" name="valueView" stackId="4" startPc="268436693"/>
-        <entry arg="true" endPc="268437017" name="bleDelegate" stackId="1" startPc="268436951"/>
-        <entry arg="true" endPc="268437017" name="deviceManager" stackId="2" startPc="268436951"/>
-        <entry arg="true" endPc="268437195" name="dc" stackId="1" startPc="268437018"/>
-        <entry endPc="268437194" name="value" stackId="2" startPc="268437022"/>
-        <entry arg="true" endPc="268437450" name="state" stackId="1" startPc="268437262"/>
-        <entry arg="true" endPc="268437560" name="state" stackId="1" startPc="268437531"/>
-        <entry arg="true" endPc="268437789" name="value" stackId="1" startPc="268437572"/>
-        <entry arg="true" endPc="268438013" name="value" stackId="1" startPc="268437790"/>
-        <entry arg="true" endPc="268438215" name="characteristic" stackId="1" startPc="268438014"/>
-        <entry arg="true" endPc="268438215" name="value" stackId="2" startPc="268438014"/>
-        <entry arg="true" endPc="268438271" name="descriptor" stackId="1" startPc="268438216"/>
-        <entry arg="true" endPc="268438271" name="status" stackId="2" startPc="268438216"/>
-        <entry endPc="268438497" name="characteristic" stackId="1" startPc="268438276"/>
-        <entry endPc="268438497" name="cccd" stackId="2" startPc="268438276"/>
-        <entry arg="true" endPc="268438669" name="value" stackId="1" startPc="268438499"/>
-        <entry arg="true" endPc="268438799" name="value" stackId="1" startPc="268438670"/>
-        <entry arg="true" endPc="268439252" name="delegate" stackId="1" startPc="268438905"/>
-        <entry arg="true" endPc="268439252" name="profileManager" stackId="2" startPc="268438905"/>
-        <entry arg="true" endPc="268439252" name="device" stackId="3" startPc="268438905"/>
-        <entry endPc="268439251" name="service" stackId="4" startPc="268438909"/>
-        <entry endPc="268439236" name="characteristic" stackId="5" startPc="268439005"/>
-        <entry arg="true" endPc="268439338" name="characteristic" stackId="1" startPc="268439272"/>
-        <entry arg="true" endPc="268439338" name="value" stackId="2" startPc="268439272"/>
-        <entry endPc="268439337" name="onCharacteristicChanged" stackId="3" startPc="268439276"/>
-        <entry arg="true" endPc="268439360" name="model" stackId="1" startPc="268439339"/>
-        <entry arg="true" endPc="268439382" name="manager" stackId="1" startPc="268439361"/>
-        <entry arg="true" endPc="268439404" name="manager" stackId="1" startPc="268439383"/>
-        <entry arg="true" endPc="268439471" name="descriptor" stackId="1" startPc="268439405"/>
-        <entry arg="true" endPc="268439471" name="status" stackId="2" startPc="268439405"/>
-        <entry endPc="268439470" name="onDescriptorWrite" stackId="3" startPc="268439409"/>
-        <entry arg="true" endPc="268439536" name="device" stackId="1" startPc="268439472"/>
-        <entry arg="true" endPc="268439536" name="state" stackId="2" startPc="268439472"/>
-        <entry endPc="268439535" name="onConnection" stackId="3" startPc="268439476"/>
-        <entry arg="true" endPc="268439636" name="iter" stackId="1" startPc="268439537"/>
-        <entry arg="true" endPc="268439636" name="obj" stackId="2" startPc="268439537"/>
-        <entry endPc="268439633" name="uuid" stackId="3" startPc="268439561"/>
-        <entry arg="true" endPc="268439658" name="model" stackId="1" startPc="268439637"/>
-        <entry arg="true" endPc="268439723" name="scanResult" stackId="1" startPc="268439659"/>
-        <entry endPc="268439722" name="onScanResult" stackId="2" startPc="268439663"/>
-        <entry arg="true" endPc="268439754" name="profileManager" stackId="1" startPc="268439724"/>
-        <entry arg="true" endPc="268439872" name="scanResults" stackId="1" startPc="268439755"/>
-        <entry endPc="268439871" name="result" stackId="2" startPc="268439779"/>
-        <entry arg="true" endPc="268439937" name="scanResult" stackId="1" startPc="268439873"/>
-        <entry arg="true" endPc="268440032" name="bleDelegate" stackId="1" startPc="268439973"/>
-        <entry arg="true" endPc="268440032" name="profileManager" stackId="2" startPc="268439973"/>
-        <entry arg="true" endPc="268440101" name="device" stackId="1" startPc="268440033"/>
-        <entry arg="true" endPc="268440207" name="state" stackId="1" startPc="268440195"/>
-        <entry arg="true" endPc="268440304" name="battery" stackId="1" startPc="268440208"/>
-        <entry arg="true" endPc="268440304" name="cadence" stackId="2" startPc="268440208"/>
-        <entry arg="true" endPc="268440304" name="speed" stackId="3" startPc="268440208"/>
-        <entry arg="true" endPc="268440304" name="assistance" stackId="4" startPc="268440208"/>
-        <entry arg="true" endPc="268440958" name="bpcxField" stackId="1" startPc="268440305"/>
-        <entry arg="true" endPc="268441259" name="dc" stackId="1" startPc="268440959"/>
-        <entry endPc="268441259" name="rez_cmp_local_custom_drawable_81141594131989125720" stackId="2" startPc="268440971"/>
-        <entry endPc="268441259" name="rez_cmp_local_text_label" stackId="3" startPc="268440971"/>
-        <entry endPc="268441259" name="rez_cmp_local_text_value" stackId="4" startPc="268440971"/>
-        <entry arg="true" endPc="268441560" name="dc" stackId="1" startPc="268441260"/>
-        <entry endPc="268441560" name="rez_cmp_local_custom_drawable_83094576728591806015" stackId="2" startPc="268441272"/>
-        <entry endPc="268441560" name="rez_cmp_local_text_label" stackId="3" startPc="268441272"/>
-        <entry endPc="268441560" name="rez_cmp_local_text_value" stackId="4" startPc="268441272"/>
-        <entry arg="true" endPc="268441861" name="dc" stackId="1" startPc="268441561"/>
-        <entry endPc="268441861" name="rez_cmp_local_custom_drawable_80264677612000344821" stackId="2" startPc="268441573"/>
-        <entry endPc="268441861" name="rez_cmp_local_text_label" stackId="3" startPc="268441573"/>
-        <entry endPc="268441861" name="rez_cmp_local_text_value" stackId="4" startPc="268441573"/>
-        <entry arg="true" endPc="268442162" name="dc" stackId="1" startPc="268441862"/>
-        <entry endPc="268442162" name="rez_cmp_local_custom_drawable_81294405130620193821" stackId="2" startPc="268441874"/>
-        <entry endPc="268442162" name="rez_cmp_local_text_label" stackId="3" startPc="268441874"/>
-        <entry endPc="268442162" name="rez_cmp_local_text_value" stackId="4" startPc="268441874"/>
-        <entry arg="true" endPc="268442535" name="dc" stackId="1" startPc="268442163"/>
-        <entry endPc="268442535" name="rez_cmp_local_var_dc_getHeight" stackId="2" startPc="268442175"/>
-        <entry endPc="268442535" name="rez_cmp_local_var_dc_getWidth" stackId="3" startPc="268442175"/>
-        <entry endPc="268442535" name="rez_cmp_local_custom_drawable_35889753110685343672" stackId="4" startPc="268442175"/>
-        <entry endPc="268442535" name="rez_cmp_local_text_label" stackId="5" startPc="268442175"/>
-        <entry endPc="268442535" name="rez_cmp_local_text_value" stackId="6" startPc="268442175"/>
+        <entry arg="true" endPc="268436409" name="info" stackId="1" startPc="268436309"/>
+        <entry endPc="268436408" name="profile" stackId="2" startPc="268436313"/>
+        <entry arg="true" endPc="268436927" name="dc" stackId="1" startPc="268436433"/>
+        <entry endPc="268436926" name="obscurityFlags" stackId="2" startPc="268436437"/>
+        <entry endPc="268436866" name="labelView" stackId="3" startPc="268436716"/>
+        <entry endPc="268436866" name="valueView" stackId="4" startPc="268436716"/>
+        <entry arg="true" endPc="268437040" name="deviceManager" stackId="1" startPc="268436974"/>
+        <entry arg="true" endPc="268437285" name="dc" stackId="1" startPc="268437041"/>
+        <entry endPc="268437284" name="value" stackId="2" startPc="268437045"/>
+        <entry endPc="268437284" name="profile" stackId="3" startPc="268437045"/>
+        <entry arg="true" endPc="268437598" name="state" stackId="1" startPc="268437352"/>
+        <entry arg="true" endPc="268437700" name="state" stackId="1" startPc="268437671"/>
+        <entry arg="true" endPc="268437929" name="value" stackId="1" startPc="268437712"/>
+        <entry arg="true" endPc="268438153" name="value" stackId="1" startPc="268437930"/>
+        <entry arg="true" endPc="268438355" name="characteristic" stackId="1" startPc="268438154"/>
+        <entry arg="true" endPc="268438355" name="value" stackId="2" startPc="268438154"/>
+        <entry arg="true" endPc="268438411" name="descriptor" stackId="1" startPc="268438356"/>
+        <entry arg="true" endPc="268438411" name="status" stackId="2" startPc="268438356"/>
+        <entry endPc="268438637" name="characteristic" stackId="1" startPc="268438416"/>
+        <entry endPc="268438637" name="cccd" stackId="2" startPc="268438416"/>
+        <entry arg="true" endPc="268438809" name="value" stackId="1" startPc="268438639"/>
+        <entry arg="true" endPc="268438939" name="value" stackId="1" startPc="268438810"/>
+        <entry arg="true" endPc="268439561" name="delegate" stackId="1" startPc="268439045"/>
+        <entry arg="true" endPc="268439561" name="profileManager" stackId="2" startPc="268439045"/>
+        <entry arg="true" endPc="268439561" name="device" stackId="3" startPc="268439045"/>
+        <entry endPc="268439560" name="service" stackId="4" startPc="268439049"/>
+        <entry endPc="268439545" name="characteristic" stackId="5" startPc="268439314"/>
+        <entry arg="true" endPc="268439647" name="characteristic" stackId="1" startPc="268439581"/>
+        <entry arg="true" endPc="268439647" name="value" stackId="2" startPc="268439581"/>
+        <entry endPc="268439646" name="onCharacteristicChanged" stackId="3" startPc="268439585"/>
+        <entry arg="true" endPc="268439669" name="model" stackId="1" startPc="268439648"/>
+        <entry arg="true" endPc="268439691" name="manager" stackId="1" startPc="268439670"/>
+        <entry arg="true" endPc="268439713" name="manager" stackId="1" startPc="268439692"/>
+        <entry arg="true" endPc="268439780" name="descriptor" stackId="1" startPc="268439714"/>
+        <entry arg="true" endPc="268439780" name="status" stackId="2" startPc="268439714"/>
+        <entry endPc="268439779" name="onDescriptorWrite" stackId="3" startPc="268439718"/>
+        <entry arg="true" endPc="268439845" name="device" stackId="1" startPc="268439781"/>
+        <entry arg="true" endPc="268439845" name="state" stackId="2" startPc="268439781"/>
+        <entry endPc="268439844" name="onConnection" stackId="3" startPc="268439785"/>
+        <entry arg="true" endPc="268439945" name="iter" stackId="1" startPc="268439846"/>
+        <entry arg="true" endPc="268439945" name="obj" stackId="2" startPc="268439846"/>
+        <entry endPc="268439942" name="uuid" stackId="3" startPc="268439870"/>
+        <entry arg="true" endPc="268439967" name="model" stackId="1" startPc="268439946"/>
+        <entry arg="true" endPc="268440032" name="scanResult" stackId="1" startPc="268439968"/>
+        <entry endPc="268440031" name="onScanResult" stackId="2" startPc="268439972"/>
+        <entry arg="true" endPc="268440063" name="profileManager" stackId="1" startPc="268440033"/>
+        <entry arg="true" endPc="268440181" name="scanResults" stackId="1" startPc="268440064"/>
+        <entry endPc="268440180" name="result" stackId="2" startPc="268440088"/>
+        <entry arg="true" endPc="268440246" name="scanResult" stackId="1" startPc="268440182"/>
+        <entry arg="true" endPc="268440484" name="bleDelegate" stackId="1" startPc="268440415"/>
+        <entry arg="true" endPc="268440484" name="profileManager" stackId="2" startPc="268440415"/>
+        <entry arg="true" endPc="268440484" name="dataModelFactory" stackId="3" startPc="268440415"/>
+        <entry arg="true" endPc="268440553" name="device" stackId="1" startPc="268440485"/>
+        <entry arg="true" endPc="268440566" name="state" stackId="1" startPc="268440554"/>
+        <entry arg="true" endPc="268440663" name="battery" stackId="1" startPc="268440567"/>
+        <entry arg="true" endPc="268440663" name="cadence" stackId="2" startPc="268440567"/>
+        <entry arg="true" endPc="268440663" name="speed" stackId="3" startPc="268440567"/>
+        <entry arg="true" endPc="268440663" name="assistance" stackId="4" startPc="268440567"/>
+        <entry arg="true" endPc="268441317" name="bpcxField" stackId="1" startPc="268440664"/>
+        <entry arg="true" endPc="268441438" name="device" stackId="1" startPc="268441318"/>
+        <entry endPc="268441438" name="profileModel" stackId="2" startPc="268441322"/>
+        <entry endPc="268441438" name="dataModel" stackId="3" startPc="268441322"/>
+        <entry arg="true" endPc="268441470" name="delegate" stackId="1" startPc="268441439"/>
+        <entry arg="true" endPc="268441470" name="profileManager" stackId="2" startPc="268441439"/>
+        <entry arg="true" endPc="268441771" name="dc" stackId="1" startPc="268441471"/>
+        <entry endPc="268441771" name="rez_cmp_local_custom_drawable_13874338011744100211" stackId="2" startPc="268441483"/>
+        <entry endPc="268441771" name="rez_cmp_local_text_label" stackId="3" startPc="268441483"/>
+        <entry endPc="268441771" name="rez_cmp_local_text_value" stackId="4" startPc="268441483"/>
+        <entry arg="true" endPc="268442072" name="dc" stackId="1" startPc="268441772"/>
+        <entry endPc="268442072" name="rez_cmp_local_custom_drawable_33425630519943564128" stackId="2" startPc="268441784"/>
+        <entry endPc="268442072" name="rez_cmp_local_text_label" stackId="3" startPc="268441784"/>
+        <entry endPc="268442072" name="rez_cmp_local_text_value" stackId="4" startPc="268441784"/>
+        <entry arg="true" endPc="268442373" name="dc" stackId="1" startPc="268442073"/>
+        <entry endPc="268442373" name="rez_cmp_local_custom_drawable_14789789021991461397" stackId="2" startPc="268442085"/>
+        <entry endPc="268442373" name="rez_cmp_local_text_label" stackId="3" startPc="268442085"/>
+        <entry endPc="268442373" name="rez_cmp_local_text_value" stackId="4" startPc="268442085"/>
+        <entry arg="true" endPc="268442674" name="dc" stackId="1" startPc="268442374"/>
+        <entry endPc="268442674" name="rez_cmp_local_custom_drawable_20577591541127143403" stackId="2" startPc="268442386"/>
+        <entry endPc="268442674" name="rez_cmp_local_text_label" stackId="3" startPc="268442386"/>
+        <entry endPc="268442674" name="rez_cmp_local_text_value" stackId="4" startPc="268442386"/>
+        <entry arg="true" endPc="268443047" name="dc" stackId="1" startPc="268442675"/>
+        <entry endPc="268443047" name="rez_cmp_local_var_dc_getHeight" stackId="2" startPc="268442687"/>
+        <entry endPc="268443047" name="rez_cmp_local_var_dc_getWidth" stackId="3" startPc="268442687"/>
+        <entry endPc="268443047" name="rez_cmp_local_custom_drawable_15866520831577440610" stackId="4" startPc="268442687"/>
+        <entry endPc="268443047" name="rez_cmp_local_text_label" stackId="5" startPc="268442687"/>
+        <entry endPc="268443047" name="rez_cmp_local_text_value" stackId="6" startPc="268442687"/>
     </localVars>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
@@ -520,21 +570,22 @@
     </annotations>
     <dataEntryOffsetMappings>
         <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
-        <dataEntry label="globals/BpcxProfileManager" offset="206" parentId="globals" symbolId="BpcxProfileManager" type="class"/>
-        <dataEntry label="globals/Background" offset="317" parentId="globals" symbolId="Background" type="class"/>
-        <dataEntry label="globals/BpcxDfView" offset="388" parentId="globals" symbolId="BpcxDfView" type="class"/>
-        <dataEntry label="globals/Rez" offset="507" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/BpcxDfApp" offset="586" parentId="globals" symbolId="BpcxDfApp" type="class"/>
-        <dataEntry label="globals/BpcxProfileModel" offset="681" parentId="globals" symbolId="BpcxProfileModel" type="class"/>
-        <dataEntry label="globals/BpcxDelegate" offset="928" parentId="globals" symbolId="BpcxDelegate" type="class"/>
-        <dataEntry label="globals/BpcxDeviceManager" offset="1095" parentId="globals" symbolId="BpcxDeviceManager" type="class"/>
-        <dataEntry label="globals/BpcxFitContributor" offset="1230" parentId="globals" symbolId="BpcxFitContributor" type="class"/>
-        <dataEntry label="globals/Rez/Drawables" offset="1333" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="1372" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/Menus" offset="1443" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry label="globals/Rez/Fonts" offset="1474" parentId="Rez" symbolId="Fonts" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="1505" parentId="Rez" symbolId="Strings" type="module"/>
-        <dataEntry label="globals/Rez/JsonData" offset="1616" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals/BpcxProfileManager" offset="214" parentId="globals" symbolId="BpcxProfileManager" type="class"/>
+        <dataEntry label="globals/Background" offset="325" parentId="globals" symbolId="Background" type="class"/>
+        <dataEntry label="globals/BpcxDfView" offset="396" parentId="globals" symbolId="BpcxDfView" type="class"/>
+        <dataEntry label="globals/Rez" offset="515" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/BpcxDfApp" offset="594" parentId="globals" symbolId="BpcxDfApp" type="class"/>
+        <dataEntry label="globals/BpcxProfileModel" offset="697" parentId="globals" symbolId="BpcxProfileModel" type="class"/>
+        <dataEntry label="globals/BpcxDelegate" offset="944" parentId="globals" symbolId="BpcxDelegate" type="class"/>
+        <dataEntry label="globals/BpcxDeviceManager" offset="1111" parentId="globals" symbolId="BpcxDeviceManager" type="class"/>
+        <dataEntry label="globals/BpcxFitContributor" offset="1262" parentId="globals" symbolId="BpcxFitContributor" type="class"/>
+        <dataEntry label="globals/BpcxDataModelFactory" offset="1365" parentId="globals" symbolId="BpcxDataModelFactory" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1452" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1491" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="1562" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="1593" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1624" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="1735" parentId="Rez" symbolId="JsonData" type="module"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" endPc="268435485" name="getApp" startPc="268435460">
@@ -568,122 +619,121 @@
         <functionEntry accessMode="public" endPc="268436308" name="&lt;init&gt;" parent="BpcxDfView" startPc="268436290">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436386" name="compute" parent="BpcxDfView" startPc="268436309">
+        <functionEntry accessMode="public" endPc="268436409" name="compute" parent="BpcxDfView" startPc="268436309">
             <param id="info"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436409" name="onTimerResume" parent="BpcxDfView" startPc="268436387">
+        <functionEntry accessMode="public" endPc="268436432" name="onTimerResume" parent="BpcxDfView" startPc="268436410">
             <documentation>
                 <![CDATA[<div class="description"> Handle the activity timer resuming<br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436904" name="onLayout" parent="BpcxDfView" startPc="268436410">
+        <functionEntry accessMode="public" endPc="268436927" name="onLayout" parent="BpcxDfView" startPc="268436433">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436927" name="onTimerStart" parent="BpcxDfView" startPc="268436905">
+        <functionEntry accessMode="public" endPc="268436950" name="onTimerStart" parent="BpcxDfView" startPc="268436928">
             <documentation>
                 <![CDATA[<div class="description"> Handle the activity timer starting<br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436950" name="onTimerPause" parent="BpcxDfView" startPc="268436928">
+        <functionEntry accessMode="public" endPc="268436973" name="onTimerPause" parent="BpcxDfView" startPc="268436951">
             <documentation>
                 <![CDATA[<div class="description"> Handle an activity timer pause<br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437017" name="initialize" parent="BpcxDfView" startPc="268436951">
-            <param id="bleDelegate"/>
+        <functionEntry accessMode="public" endPc="268437040" name="initialize" parent="BpcxDfView" startPc="268436974">
             <param id="deviceManager"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437195" name="onUpdate" parent="BpcxDfView" startPc="268437018">
+        <functionEntry accessMode="public" endPc="268437285" name="onUpdate" parent="BpcxDfView" startPc="268437041">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437218" name="onTimerStop" parent="BpcxDfView" startPc="268437196">
+        <functionEntry accessMode="public" endPc="268437308" name="onTimerStop" parent="BpcxDfView" startPc="268437286">
             <documentation>
                 <![CDATA[<div class="description"> Handle the activity timer stopping<br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437242" name="&lt;init&gt;" parent="Rez" startPc="268437219">
+        <functionEntry accessMode="public" endPc="268437332" name="&lt;init&gt;" parent="Rez" startPc="268437309">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437261" name="&lt;init&gt;" parent="BpcxDfApp" startPc="268437243">
+        <functionEntry accessMode="public" endPc="268437351" name="&lt;init&gt;" parent="BpcxDfApp" startPc="268437333">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437450" name="onStart" parent="BpcxDfApp" startPc="268437262">
+        <functionEntry accessMode="public" endPc="268437598" name="onStart" parent="BpcxDfApp" startPc="268437352">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437509" name="getInitialView" parent="BpcxDfApp" startPc="268437451">
+        <functionEntry accessMode="public" endPc="268437649" name="getInitialView" parent="BpcxDfApp" startPc="268437599">
             <documentation>
                 <![CDATA[<div class="description"> Return the initial view of your application here<br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437530" name="initialize" parent="BpcxDfApp" startPc="268437510">
+        <functionEntry accessMode="public" endPc="268437670" name="initialize" parent="BpcxDfApp" startPc="268437650">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437560" name="onStop" parent="BpcxDfApp" startPc="268437531">
+        <functionEntry accessMode="public" endPc="268437700" name="onStop" parent="BpcxDfApp" startPc="268437671">
             <param id="state"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="BpcxProfileModel">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437571" name="getCadence" parent="BpcxProfileModel" startPc="268437561">
+        <functionEntry accessMode="public" endPc="268437711" name="getCadence" parent="BpcxProfileModel" startPc="268437701">
             <documentation>
                 <![CDATA[<div class="description"> Get the cadence<br/> <div class="returns">Returns  The cadence value</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268437789" name="&lt;globals/BpcxProfileModel/&lt;&gt;processMotorValues&gt;" parent="BpcxProfileModel" startPc="268437572">
+        <functionEntry accessMode="private" endPc="268437929" name="&lt;globals/BpcxProfileModel/&lt;&gt;processMotorValues&gt;" parent="BpcxProfileModel" startPc="268437712">
             <param id="value"/>
             <documentation>
                 <![CDATA[<div class="description"> Process and set the motor values<br/> <div class="param"> value new motor values</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268438013" name="&lt;globals/BpcxProfileModel/&lt;&gt;processBatteryValues&gt;" parent="BpcxProfileModel" startPc="268437790">
+        <functionEntry accessMode="private" endPc="268438153" name="&lt;globals/BpcxProfileModel/&lt;&gt;processBatteryValues&gt;" parent="BpcxProfileModel" startPc="268437930">
             <param id="value"/>
             <documentation>
                 <![CDATA[<div class="description"> Process and set the battery values<br/> <div class="param"> value new battery values</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438215" name="onCharacteristicChanged" parent="BpcxProfileModel" startPc="268438014">
+        <functionEntry accessMode="public" endPc="268438355" name="onCharacteristicChanged" parent="BpcxProfileModel" startPc="268438154">
             <param id="characteristic"/>
             <param id="value"/>
             <documentation>
                 <![CDATA[<div class="description"> Handle a characteristic being changed<br/> <div class="param"> char The characteristic that changed</div><br/> <div class="param"> value The updated value of the characteristic</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438271" name="onDescriptorWrite" parent="BpcxProfileModel" startPc="268438216">
+        <functionEntry accessMode="public" endPc="268438411" name="onDescriptorWrite" parent="BpcxProfileModel" startPc="268438356">
             <param id="descriptor"/>
             <param id="status"/>
             <documentation>
                 <![CDATA[<div class="description"> Handle the completion of a write operation on a descriptor<br/> <div class="param"> descriptor The descriptor that was written</div><br/> <div class="param"> status The BluetoothLowEnergy status indicating the result of the operation</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268438498" name="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;" parent="BpcxProfileModel" startPc="268438272">
+        <functionEntry accessMode="private" endPc="268438638" name="&lt;globals/BpcxProfileModel/&lt;&gt;activateNextNotification&gt;" parent="BpcxProfileModel" startPc="268438412">
             <documentation>
                 <![CDATA[<div class="description"> Write the next notification to the descriptor<br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268438669" name="&lt;globals/BpcxProfileModel/&lt;&gt;processDistanceValues&gt;" parent="BpcxProfileModel" startPc="268438499">
+        <functionEntry accessMode="private" endPc="268438809" name="&lt;globals/BpcxProfileModel/&lt;&gt;processDistanceValues&gt;" parent="BpcxProfileModel" startPc="268438639">
             <param id="value"/>
             <documentation>
                 <![CDATA[<div class="description"> Process and set the distance values<br/> <div class="param"> value new distance values</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268438799" name="&lt;globals/BpcxProfileModel/&lt;&gt;processRiderValues&gt;" parent="BpcxProfileModel" startPc="268438670">
+        <functionEntry accessMode="private" endPc="268438939" name="&lt;globals/BpcxProfileModel/&lt;&gt;processRiderValues&gt;" parent="BpcxProfileModel" startPc="268438810">
             <param id="value"/>
             <documentation>
                 <![CDATA[<div class="description"> Process and set the rider values<br/> <div class="param"> value new rider values</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268438904" name="&lt;globals/BpcxProfileModel/&lt;&gt;processCccdWrite&gt;" parent="BpcxProfileModel" startPc="268438800">
+        <functionEntry accessMode="private" endPc="268439044" name="&lt;globals/BpcxProfileModel/&lt;&gt;processCccdWrite&gt;" parent="BpcxProfileModel" startPc="268438940">
             <documentation>
                 <![CDATA[<div class="description"> Process a CCCD write operation<br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439252" name="initialize" parent="BpcxProfileModel" startPc="268438905">
+        <functionEntry accessMode="public" endPc="268439561" name="initialize" parent="BpcxProfileModel" startPc="268439045">
             <param id="delegate"/>
             <param id="profileManager"/>
             <param id="device"/>
@@ -691,74 +741,74 @@
                 <![CDATA[<div class="description"> Constructor<br/> <div class="param"> delegate The BLE delegate for the model</div><br/> <div class="param"> profileManager The profile manager for this model</div><br/> <div class="param"> device The current device</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439271" name="&lt;init&gt;" parent="BpcxDelegate" startPc="268439253">
+        <functionEntry accessMode="public" endPc="268439580" name="&lt;init&gt;" parent="BpcxDelegate" startPc="268439562">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439338" name="onCharacteristicChanged" parent="BpcxDelegate" startPc="268439272">
+        <functionEntry accessMode="public" endPc="268439647" name="onCharacteristicChanged" parent="BpcxDelegate" startPc="268439581">
             <param id="characteristic"/>
             <param id="value"/>
             <documentation>
                 <![CDATA[<div class="description"> Handle a characteristic being changed<br/> <div class="param"> char The characteristic that changed</div><br/> <div class="param"> value The updated value of the characteristic</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439360" name="notifyCharacteristicChanged" parent="BpcxDelegate" startPc="268439339">
+        <functionEntry accessMode="public" endPc="268439669" name="notifyCharacteristicChanged" parent="BpcxDelegate" startPc="268439648">
             <param id="model"/>
             <documentation>
                 <![CDATA[<div class="description"> Store a new model to handle characteristic changes<br/> <div class="param"> model The model for characteristics</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439382" name="notifyConnection" parent="BpcxDelegate" startPc="268439361">
+        <functionEntry accessMode="public" endPc="268439691" name="notifyConnection" parent="BpcxDelegate" startPc="268439670">
             <param id="manager"/>
             <documentation>
                 <![CDATA[<div class="description"> Store a new manager to manage device connections<br/> <div class="param"> manager The manager for devices</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439404" name="notifyScanResult" parent="BpcxDelegate" startPc="268439383">
+        <functionEntry accessMode="public" endPc="268439713" name="notifyScanResult" parent="BpcxDelegate" startPc="268439692">
             <param id="manager"/>
             <documentation>
                 <![CDATA[<div class="description"> Store a new manager to manage scan results<br/> <div class="param"> manager The manager of the scan results</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439471" name="onDescriptorWrite" parent="BpcxDelegate" startPc="268439405">
+        <functionEntry accessMode="public" endPc="268439780" name="onDescriptorWrite" parent="BpcxDelegate" startPc="268439714">
             <param id="descriptor"/>
             <param id="status"/>
             <documentation>
                 <![CDATA[<div class="description"> Handle the completion of a write operation on a descriptor<br/> <div class="param"> descriptor The descriptor that was written</div><br/> <div class="param"> status The BluetoothLowEnergy status indicating the result of the operation</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439536" name="onConnectedStateChanged" parent="BpcxDelegate" startPc="268439472">
+        <functionEntry accessMode="public" endPc="268439845" name="onConnectedStateChanged" parent="BpcxDelegate" startPc="268439781">
             <param id="device"/>
             <param id="state"/>
             <documentation>
                 <![CDATA[<div class="description"> Handle pairing and connecting to a device<br/> <div class="param"> device The device state that was changed</div><br/> <div class="param"> state The state of the connection</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268439636" name="&lt;globals/BpcxDelegate/&lt;&gt;contains&gt;" parent="BpcxDelegate" startPc="268439537">
+        <functionEntry accessMode="private" endPc="268439945" name="&lt;globals/BpcxDelegate/&lt;&gt;contains&gt;" parent="BpcxDelegate" startPc="268439846">
             <param id="iter"/>
             <param id="obj"/>
             <documentation>
                 <![CDATA[<div class="description"> Get whether the iterator contains a specific uuid<br/> <div class="param"> iter Iterator of uuid objects</div><br/> <div class="param"> obj Uuid to search for</div><br/> <div class="returns">Returns  true if object found, false otherwise</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439658" name="notifyDescriptorWrite" parent="BpcxDelegate" startPc="268439637">
+        <functionEntry accessMode="public" endPc="268439967" name="notifyDescriptorWrite" parent="BpcxDelegate" startPc="268439946">
             <param id="model"/>
             <documentation>
                 <![CDATA[<div class="description"> Store a new model to handle descriptor writes<br/> <div class="param"> model The model for descriptors</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268439723" name="&lt;globals/BpcxDelegate/&lt;&gt;broadcastScanResult&gt;" parent="BpcxDelegate" startPc="268439659">
+        <functionEntry accessMode="private" endPc="268440032" name="&lt;globals/BpcxDelegate/&lt;&gt;broadcastScanResult&gt;" parent="BpcxDelegate" startPc="268439968">
             <param id="scanResult"/>
             <documentation>
                 <![CDATA[<div class="description"> Broadcast a new scan result<br/> <div class="param"> scanResult The new scan result</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439754" name="initialize" parent="BpcxDelegate" startPc="268439724">
+        <functionEntry accessMode="public" endPc="268440063" name="initialize" parent="BpcxDelegate" startPc="268440033">
             <param id="profileManager"/>
             <documentation>
                 <![CDATA[<div class="description"> Constructor<br/> <div class="param"> BpcxProfileManager The profile manager</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439872" name="onScanResults" parent="BpcxDelegate" startPc="268439755">
+        <functionEntry accessMode="public" endPc="268440181" name="onScanResults" parent="BpcxDelegate" startPc="268440064">
             <param id="scanResults"/>
             <documentation>
                 <![CDATA[<div class="description"> Handle new Scan Results being received<br/> <div class="param"> scanResults An iterator of new scan result objects</div><br/></div>]]>
@@ -767,48 +817,56 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="BpcxDeviceManager">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439937" name="procScanResult" parent="BpcxDeviceManager" startPc="268439873">
+        <functionEntry accessMode="public" endPc="268440246" name="procScanResult" parent="BpcxDeviceManager" startPc="268440182">
             <param id="scanResult"/>
             <documentation>
                 <![CDATA[<div class="description"> Process scan result<br/> <div class="param"> scanResult The scan result</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439948" name="getProfileModel" parent="BpcxDeviceManager" startPc="268439938">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268439972" name="start" parent="BpcxDeviceManager" startPc="268439949">
+        <functionEntry accessMode="public" endPc="268440270" name="start" parent="BpcxDeviceManager" startPc="268440247">
             <documentation>
                 <![CDATA[<div class="description"> Start BLE scanning<br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440032" name="initialize" parent="BpcxDeviceManager" startPc="268439973">
+        <functionEntry accessMode="public" endPc="268440309" name="isConnected" parent="BpcxDeviceManager" startPc="268440271">
+            <documentation>
+                <![CDATA[<div class="description"> Get whether a device is connected<br/> <div class="returns">Returns  true if connected, false otherwise</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440362" name="getActiveProfile" parent="BpcxDeviceManager" startPc="268440310">
+            <documentation>
+                <![CDATA[<div class="description"> Get the active profile<br/> <div class="returns">Returns  The current profile, or null if no device connected</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268440414" name="&lt;globals/BpcxDeviceManager/&lt;&gt;procDeviceConnected&gt;" parent="BpcxDeviceManager" startPc="268440363">
+            <documentation>
+                <![CDATA[<div class="description"> Update the profile after a is device connected<br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440484" name="initialize" parent="BpcxDeviceManager" startPc="268440415">
             <param id="bleDelegate"/>
             <param id="profileManager"/>
+            <param id="dataModelFactory"/>
             <documentation>
                 <![CDATA[<div class="description"> Constructor<br/> <div class="param"> bleDelegate The BLE delegate</div><br/> <div class="param"> profileManager The profile manager</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440101" name="procConnection" parent="BpcxDeviceManager" startPc="268440033">
+        <functionEntry accessMode="public" endPc="268440553" name="procConnection" parent="BpcxDeviceManager" startPc="268440485">
             <param id="device"/>
             <documentation>
                 <![CDATA[<div class="description"> Process a new device connection<br/> <div class="param"> device The device that was connected</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268440194" name="&lt;globals/BpcxDeviceManager/&lt;&gt;procDeviceConnected&gt;" parent="BpcxDeviceManager" startPc="268440102">
-            <documentation>
-                <![CDATA[<div class="description"> Update the profile after a is device connected<br/></div>]]>
-            </documentation>
-        </functionEntry>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="BpcxFitContributor">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440207" name="setTimerRunning" parent="BpcxFitContributor" startPc="268440195">
+        <functionEntry accessMode="public" endPc="268440566" name="setTimerRunning" parent="BpcxFitContributor" startPc="268440554">
             <param id="state"/>
             <documentation>
                 <![CDATA[<div class="description"> Set whether the timer is running<br/> <div class="param"> state Whether the timer is running</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440304" name="update" parent="BpcxFitContributor" startPc="268440208">
+        <functionEntry accessMode="public" endPc="268440663" name="update" parent="BpcxFitContributor" startPc="268440567">
             <param id="battery"/>
             <param id="cadence"/>
             <param id="speed"/>
@@ -817,10 +875,26 @@
                 <![CDATA[<div class="description"> Update data and fields<br/> <div class="param"> battery level, cadence, speed and assistance value</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440958" name="initialize" parent="BpcxFitContributor" startPc="268440305">
+        <functionEntry accessMode="public" endPc="268441317" name="initialize" parent="BpcxFitContributor" startPc="268440664">
             <param id="bpcxField"/>
             <documentation>
                 <![CDATA[<div class="description"> Constructor<br/> <div class="param"> dataField Data field to use to create fields</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="BpcxDataModelFactory">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441438" name="getProfileModel" parent="BpcxDataModelFactory" startPc="268441318">
+            <param id="device"/>
+            <documentation>
+                <![CDATA[<div class="description"> Get the profile model instance<br/> <div class="param"> device The device to use for a new model</div><br/> <div class="returns">Returns  The current environment profile model or a new one</div><br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441470" name="initialize" parent="BpcxDataModelFactory" startPc="268441439">
+            <param id="delegate"/>
+            <param id="profileManager"/>
+            <documentation>
+                <![CDATA[<div class="description"> Constructor<br/> <div class="param"> delegate The BLE delegate to use for the models</div><br/> <div class="param"> profileManager The profile manager to use for a profile model</div><br/></div>]]>
             </documentation>
         </functionEntry>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
@@ -841,23 +915,23 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441259" name="BottomRightLayout" parent="Layouts" startPc="268440959">
+        <functionEntry accessMode="public" endPc="268441771" name="BottomRightLayout" parent="Layouts" startPc="268441471">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441560" name="TopRightLayout" parent="Layouts" startPc="268441260">
+        <functionEntry accessMode="public" endPc="268442072" name="TopRightLayout" parent="Layouts" startPc="268441772">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441861" name="BottomLeftLayout" parent="Layouts" startPc="268441561">
+        <functionEntry accessMode="public" endPc="268442373" name="BottomLeftLayout" parent="Layouts" startPc="268442073">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442162" name="TopLeftLayout" parent="Layouts" startPc="268441862">
+        <functionEntry accessMode="public" endPc="268442674" name="TopLeftLayout" parent="Layouts" startPc="268442374">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442535" name="MainLayout" parent="Layouts" startPc="268442163">
+        <functionEntry accessMode="public" endPc="268443047" name="MainLayout" parent="Layouts" startPc="268442675">
             <param id="dc"/>
             <documentation/>
         </functionEntry>

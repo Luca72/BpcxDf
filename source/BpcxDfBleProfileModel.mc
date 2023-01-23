@@ -34,6 +34,20 @@ class BpcxProfileModel {
         _profileManager = profileManager;
         _service = device.getService(profileManager.BPCX_SERVICE);
 
+        _batteryCharge = 0;
+        _batteryCurrent = 0.0;
+        _batteryPower = 0.0;
+        _batteryVoltage = 0.0;
+        _riderTorque = 0.0;
+        _riderCadence = 0;
+        _motorTorque = 0.0;
+        _motorPower = 0.0;
+        _motorRpm = 0;
+        _motorSupportLevel = 0;
+        _remainingDistance = 0;
+        _speed = 0.0;
+        _odometer = 0;
+
         _pendingNotifies = [] as Array<Characteristic>;
 
         var service = _service;

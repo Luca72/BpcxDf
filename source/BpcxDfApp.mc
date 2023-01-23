@@ -8,6 +8,7 @@ class BpcxDfApp extends Application.AppBase {
     private var _profileManager as BpcxProfileManager?;
     private var _bleDelegate as BpcxDelegate?;
     private var _deviceManager as BpcxDeviceManager?;  
+    private var _dataFactory as BpcxDataModelFactory?;
 
     function initialize() {
         AppBase.initialize();
@@ -17,7 +18,8 @@ class BpcxDfApp extends Application.AppBase {
     function onStart(state as Dictionary?) as Void {
         _profileManager = new $.BpcxProfileManager();
         _bleDelegate = new $.BpcxDelegate(_profileManager as BpcxProfileManager);
-        _deviceManager = new $.BpcxDeviceManager(_bleDelegate as BpcxDelegate, _profileManager as BpcxProfileManager);
+        _dataFactory = new $.BpcxDataModelFactory(_bleDelegate as BpcxDelegate, _profileManager as BpcxProfileManager);
+        _deviceManager = new $.BpcxDeviceManager(_bleDelegate as BpcxDelegate, _profileManager as BpcxProfileManager, _dataFactory as BpcxDataModelFactory);
 
         BluetoothLowEnergy.setDelegate(_bleDelegate as BpcxDelegate);
         (_profileManager as BpcxProfileManager).registerProfiles();
@@ -33,7 +35,7 @@ class BpcxDfApp extends Application.AppBase {
 
     //! Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
-        return [ new BpcxDfView(_bleDelegate as BpcxDelegate, _deviceManager as BpcxDeviceManager) ] as Array<Views or InputDelegates>;
+        return [ new BpcxDfView(_deviceManager as BpcxDeviceManager) ] as Array<Views or InputDelegates>;
     }
 }
 

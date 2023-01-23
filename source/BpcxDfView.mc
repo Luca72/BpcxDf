@@ -9,7 +9,7 @@ class BpcxDfView extends WatchUi.DataField {
     private var _fitContributor as BpcxFitContributor?;
     private var _deviceManager as BpcxDeviceManager;
 
-    function initialize(bleDelegate as BpcxDelegate, deviceManager as BpcxDeviceManager) {
+    function initialize(deviceManager as BpcxDeviceManager) {
         DataField.initialize();
         _deviceManager = deviceManager;
         _fitContributor = new $.BpcxFitContributor(self);
@@ -53,28 +53,16 @@ class BpcxDfView extends WatchUi.DataField {
     // Note that compute() and onUpdate() are asynchronous, and there is no
     // guarantee that compute() will be called before onUpdate().
     function compute(info as Activity.Info) as Void {
-        var profileModel = _deviceManager.getProfileModel();
-        if(profileModel != null) {
-            // See Activity.Info in the documentation for available information.
-            /*
-            if(info has :currentHeartRate){
-                if(info.currentHeartRate != null){
-                    mValue = info.currentHeartRate as Number;
-                } else {
-                    mValue = 0.0f;
-                }
-            }
-            */
+        var profile = _deviceManager.getActiveProfile();
+        if (_deviceManager.isConnected() && (profile != null)) {
 
             // Update the activity data
-            
             _fitContributor.update(
                 94, 
-                profileModel.getCadence(), 
+                profile.getCadence(), 
                 23.0, 
                 2
             );
-            
         }
     }
 
@@ -91,7 +79,11 @@ class BpcxDfView extends WatchUi.DataField {
         } else {
             value.setColor(Graphics.COLOR_BLACK);
         }
-        value.setText("23.0");
+        var profile = _deviceManager.getActiveProfile();
+        if (_deviceManager.isConnected() && (profile != null)) {
+            value.setText(profile.getCadence().toString());
+        }
+        
 
         // Call parent's onUpdate(dc) to redraw the layout
         View.onUpdate(dc);

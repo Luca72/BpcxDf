@@ -6,6 +6,7 @@ class BpcxDeviceManager {
     private var _profileManager as BpcxProfileManager;
     private var _delegate as BpcxDelegate;
     private var _profileModel as BpcxProfileModel?;
+    private var _dataModelFactory as BpcxDataModelFactory;
     private var _device as Device?;
     
     private var _configComplete as Boolean = false;
@@ -14,13 +15,14 @@ class BpcxDeviceManager {
     //! Constructor
     //! @param bleDelegate The BLE delegate
     //! @param profileManager The profile manager
-    public function initialize(bleDelegate as BpcxDelegate, profileManager as BpcxProfileManager) {
+    public function initialize(bleDelegate as BpcxDelegate, profileManager as BpcxProfileManager,  dataModelFactory as BpcxDataModelFactory) {
         _device = null;
 
         bleDelegate.notifyScanResult(self);
         bleDelegate.notifyConnection(self);
 
         _profileManager = profileManager;
+        _dataModelFactory = dataModelFactory;
         _delegate = bleDelegate;
     }
 
@@ -54,15 +56,28 @@ class BpcxDeviceManager {
     //! Update the profile after a is device connected
     private function procDeviceConnected() as Void {
         if (_device != null) {
-            if (_profileModel == null) {
-                _profileModel = new $.BpcxProfileModel(_delegate, _profileManager, _device);        
-            }
-
+            _profileModel = _dataModelFactory.getProfileModel(_device);
         }
-    }    
+    }
 
-    function getProfileModel() as BpcxProfileModel {
-        return _profileModel as BpcxProfileModel;
+    //! Get the active profile
+    //! @return The current profile, or null if no device connected
+    public function getActiveProfile() as BpcxProfileModel? {
+        if (_device != null) {
+            if (!_device.isConnected()) {
+                return null;
+            }
+        }
+        return _profileModel;
+    }
+
+    //! Get whether a device is connected
+    //! @return true if connected, false otherwise
+    public function isConnected() as Boolean {
+        if (_device != null) {
+            return _device.isConnected();
+        }
+        return false;
     }
 
 }
