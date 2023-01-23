@@ -1,0 +1,212 @@
+[ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc"; @line = 1; ]
+import Toybox.BluetoothLowEnergy;
+[ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc"; @line = 2; ]
+import Toybox.System;
+[ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc"; @line = 4; ]
+class BpcxProfileManager{
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc"; @line = 4; ]
+    <init> {
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc" 6 17 ]
+        %tmp.1 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.2 = getv function %tmp.1 :longToUuid;
+        %tmp.3 = 0xD6970001904511EDL;
+        %tmp.4 = 0xA1EB0242AC120002L;
+        %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4);
+        putv self :BPCX_SERVICE %tmp.5;
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc" 7 17 ]
+        %tmp.6 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.7 = getv function %tmp.6 :longToUuid;
+        %tmp.8 = 0xD6970010904511EDL;
+        %tmp.9 = 0xA1EB0242AC120002L;
+        %tmp.10 = invoke %tmp.6 %tmp.7(%tmp.8, %tmp.9);
+        putv self :BPCX_RIDER_CHARACTERISTICS %tmp.10;
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc" 8 17 ]
+        %tmp.11 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.12 = getv function %tmp.11 :longToUuid;
+        %tmp.13 = 0xD6970011904511EDL;
+        %tmp.14 = 0xA1EB0242AC120002L;
+        %tmp.15 = invoke %tmp.11 %tmp.12(%tmp.13, %tmp.14);
+        putv self :BPCX_BATTERY_CHARACTERISTICS %tmp.15;
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc" 9 17 ]
+        %tmp.16 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.17 = getv function %tmp.16 :longToUuid;
+        %tmp.18 = 0xD6970012904511EDL;
+        %tmp.19 = 0xA1EB0242AC120002L;
+        %tmp.20 = invoke %tmp.16 %tmp.17(%tmp.18, %tmp.19);
+        putv self :BPCX_MOTOR_CHARACTERISTICS %tmp.20;
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc" 10 17 ]
+        %tmp.21 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.22 = getv function %tmp.21 :longToUuid;
+        %tmp.23 = 0xD6970013904511EDL;
+        %tmp.24 = 0xA1EB0242AC120002L;
+        %tmp.25 = invoke %tmp.21 %tmp.22(%tmp.23, %tmp.24);
+        putv self :BPCX_DISTANCE_CHARACTERISTICS %tmp.25;
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc" 11 17 ]
+        %tmp.26 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.27 = getv function %tmp.26 :longToUuid;
+        %tmp.28 = 0xD6970002904511EDL;
+        %tmp.29 = 0xA1EB0242AC120002L;
+        %tmp.30 = invoke %tmp.26 %tmp.27(%tmp.28, %tmp.29);
+        putv self :BPCX_SENSOR_LOCATION %tmp.30;
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc" 13 18 ]
+        %tmp.31 = newd 2;
+        %tmp.33 = const :uuid;
+        %tmp.35 = getv ? :BPCX_SERVICE;
+        %tmp.36 = dup %tmp.31;
+        %tmp.37 = aputv %tmp.36 %tmp.33 %tmp.35;
+        %tmp.39 = const :characteristics;
+        %tmp.40 = newa 5;
+        %tmp.41 = newd 2;
+        %tmp.43 = const :uuid;
+        %tmp.45 = getv ? :BPCX_RIDER_CHARACTERISTICS;
+        %tmp.46 = dup %tmp.41;
+        %tmp.47 = aputv %tmp.46 %tmp.43 %tmp.45;
+        %tmp.49 = const :descriptors;
+        %tmp.50 = newa 1;
+        %tmp.51 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.52 = getv function %tmp.51 :cccdUuid;
+        %tmp.53 = invoke %tmp.51 %tmp.52();
+        %tmp.54 = dup %tmp.50;
+        %tmp.55 = aputv %tmp.54 0 %tmp.53;
+        %tmp.56 = dup %tmp.47;
+        %tmp.57 = aputv %tmp.56 %tmp.49 %tmp.55;
+        %tmp.58 = dup %tmp.40;
+        %tmp.59 = aputv %tmp.58 0 %tmp.57;
+        %tmp.60 = newd 2;
+        %tmp.62 = const :uuid;
+        %tmp.64 = getv ? :BPCX_BATTERY_CHARACTERISTICS;
+        %tmp.65 = dup %tmp.60;
+        %tmp.66 = aputv %tmp.65 %tmp.62 %tmp.64;
+        %tmp.68 = const :descriptors;
+        %tmp.69 = newa 1;
+        %tmp.70 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.71 = getv function %tmp.70 :cccdUuid;
+        %tmp.72 = invoke %tmp.70 %tmp.71();
+        %tmp.73 = dup %tmp.69;
+        %tmp.74 = aputv %tmp.73 0 %tmp.72;
+        %tmp.75 = dup %tmp.66;
+        %tmp.76 = aputv %tmp.75 %tmp.68 %tmp.74;
+        %tmp.77 = dup %tmp.59;
+        %tmp.78 = aputv %tmp.77 1 %tmp.76;
+        %tmp.79 = newd 2;
+        %tmp.81 = const :uuid;
+        %tmp.83 = getv ? :BPCX_MOTOR_CHARACTERISTICS;
+        %tmp.84 = dup %tmp.79;
+        %tmp.85 = aputv %tmp.84 %tmp.81 %tmp.83;
+        %tmp.87 = const :descriptors;
+        %tmp.88 = newa 1;
+        %tmp.89 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.90 = getv function %tmp.89 :cccdUuid;
+        %tmp.91 = invoke %tmp.89 %tmp.90();
+        %tmp.92 = dup %tmp.88;
+        %tmp.93 = aputv %tmp.92 0 %tmp.91;
+        %tmp.94 = dup %tmp.85;
+        %tmp.95 = aputv %tmp.94 %tmp.87 %tmp.93;
+        %tmp.96 = dup %tmp.78;
+        %tmp.97 = aputv %tmp.96 2 %tmp.95;
+        %tmp.98 = newd 2;
+        %tmp.100 = const :uuid;
+        %tmp.102 = getv ? :BPCX_DISTANCE_CHARACTERISTICS;
+        %tmp.103 = dup %tmp.98;
+        %tmp.104 = aputv %tmp.103 %tmp.100 %tmp.102;
+        %tmp.106 = const :descriptors;
+        %tmp.107 = newa 1;
+        %tmp.108 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.109 = getv function %tmp.108 :cccdUuid;
+        %tmp.110 = invoke %tmp.108 %tmp.109();
+        %tmp.111 = dup %tmp.107;
+        %tmp.112 = aputv %tmp.111 0 %tmp.110;
+        %tmp.113 = dup %tmp.104;
+        %tmp.114 = aputv %tmp.113 %tmp.106 %tmp.112;
+        %tmp.115 = dup %tmp.97;
+        %tmp.116 = aputv %tmp.115 3 %tmp.114;
+        %tmp.117 = newd 1;
+        %tmp.119 = const :uuid;
+        %tmp.121 = getv ? :BPCX_SENSOR_LOCATION;
+        %tmp.122 = dup %tmp.117;
+        %tmp.123 = aputv %tmp.122 %tmp.119 %tmp.121;
+        %tmp.124 = dup %tmp.116;
+        %tmp.125 = aputv %tmp.124 4 %tmp.123;
+        %tmp.126 = dup %tmp.37;
+        %tmp.127 = aputv %tmp.126 %tmp.39 %tmp.125;
+        putv self :_bpcxProfileDef %tmp.127;
+    }
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc"; @line = 4; ]
+    function initialize() as Void {
+    }
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc"; @line = 6; @position = 17; ]
+    public
+    const BPCX_SERVICE;
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc"; @line = 7; @position = 17; ]
+    public
+    const BPCX_RIDER_CHARACTERISTICS;
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc"; @line = 8; @position = 17; ]
+    public
+    const BPCX_BATTERY_CHARACTERISTICS;
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc"; @line = 9; @position = 17; ]
+    public
+    const BPCX_MOTOR_CHARACTERISTICS;
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc"; @line = 10; @position = 17; ]
+    public
+    const BPCX_DISTANCE_CHARACTERISTICS;
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc"; @line = 11; @position = 17; ]
+    public
+    const BPCX_SENSOR_LOCATION;
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc"; @line = 13; @position = 18; ]
+    private
+    const _bpcxProfileDef;
+    //! Register the bluetooth profile
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc"; @line = 33; ]
+    public
+    function registerProfiles() as Void {
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_33_47_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc" 34 2 ]
+        try @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_34_2_beginTry @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_34_2_endTry @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_34_2_catch @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_34_2_finally;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_34_2_beginTry:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_34_6_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc" 35 9 ]
+        %tmp.1 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.2 = getv function %tmp.1 :registerProfile;
+        %tmp.4 = getv ? :_bpcxProfileDef;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_34_6_stop:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_34_2_endTry:
+        jsr @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_34_2_finally;
+        goto @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_34_2_end;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_34_2_catch:
+        %tmp.5 = exception;
+        push %tmp.5;
+        [ "_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_34_2_catch" "_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_36_4_end" ]
+        %exception.1 = local;
+        %tmp.6 = dup %tmp.5;
+        lputv %exception.1 %tmp.6;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_36_21_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc" 37 3 ]
+        %tmp.7 = getm $.Toybox.System;
+        %tmp.8 = getv function %tmp.7 :println;
+        %tmp.9 = "exception=";
+        %tmp.10 = lgetv %exception.1;
+        %tmp.11 = getv function %tmp.10 :getErrorMessage;
+        %tmp.12 = invoke %tmp.10 %tmp.11();
+        %tmp.13 = add %tmp.9 %tmp.12;
+        invoke %tmp.7 %tmp.8(%tmp.13);
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_36_21_stop:
+        jsr @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_34_2_finally;
+        pop;
+        goto @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_34_2_end;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_36_4_end:
+        jsr @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_34_2_finally;
+        throw %tmp.5;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_34_2_finally:
+        jsrret;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_34_2_end:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfBleProfileManager_mc_33_47_stop:
+    }
+}
+[ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfBleProfileManager.mc"; @line = 1; ]
+<init> {
+}

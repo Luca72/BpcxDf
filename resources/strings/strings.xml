@@ -1,0 +1,15 @@
+<strings>
+    <string id="AppName">BpcxDf</string>
+
+    <string id="label">My Value</string>
+
+    <!-- Fit Contribution Fields -->
+    <string id="BatteryField">Battery</string>
+    <string id="BatteryUnitField">%</string>
+    <string id="CadenceField">Cadence</string>
+    <string id="CadenceUnitField">RPM</string>
+    <string id="SpeedField">Speed</string>
+    <string id="SpeedUnitField">Km/h</string>
+    <string id="AssistanceLevelField">Assistance Level</string>
+    <string id="AssistanceLevelUnitField">-</string><!-- // assistance level unit? -->    
+</strings>

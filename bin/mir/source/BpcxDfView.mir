@@ -1,0 +1,347 @@
+[ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc"; @line = 1; ]
+import Toybox.Activity;
+[ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc"; @line = 2; ]
+import Toybox.Graphics;
+[ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc"; @line = 4; ]
+import Toybox.WatchUi;
+[ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc"; @line = 6; ]
+class BpcxDfView extends WatchUi.DataField{
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc"; @line = 9; @position = 16; ]
+    private
+    var _fitContributor as BpcxFitContributor or Null;
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc"; @line = 10; @position = 16; ]
+    private
+    var _deviceManager as BpcxDeviceManager;
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc"; @line = 12; ]
+    function initialize(bleDelegate as BpcxDelegate, deviceManager as BpcxDeviceManager) as Void {
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_12_89_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 13 8 ]
+        %tmp.2 = getv ? :DataField;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 14 8 ]
+        %tmp.5 = lgetv %deviceManager;
+        putv self :_deviceManager %tmp.5;
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 15 8 ]
+        %tmp.9 = getm $;
+        %tmp.10 = getv %tmp.9 :BpcxFitContributor;
+        %tmp.12 = lgetv %self;
+        %tmp.6 = newc %tmp.10 (%tmp.12);
+        putv self :_fitContributor %tmp.6;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_12_89_stop:
+    }
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc"; @line = 20; ]
+    function onLayout(dc as Dc) as Void {
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_20_40_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 21 8 ]
+        [ "_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_20_40_start" "_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_20_40_stop" ]
+        %obscurityFlags.1 = local;
+        %tmp.2 = getv ? :DataField;
+        %tmp.3 = getv function %tmp.2 :getObscurityFlags;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %obscurityFlags.1 %tmp.4;
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 24 8 ]
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_24_8_if_stmt:
+        %tmp.6 = lgetv %obscurityFlags.1;
+        %tmp.8 = getv ? :OBSCURE_TOP;
+        %tmp.10 = getv ? :OBSCURE_LEFT;
+        %tmp.11 = bitor %tmp.8 %tmp.10;
+        %tmp.12 = eq %tmp.6 %tmp.11;
+        bf %tmp.12 @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_24_8_if_false;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_24_8_if_true:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_24_60_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 25 12 ]
+        %tmp.14 = getv ? :View;
+        %tmp.15 = getv function %tmp.14 :setLayout;
+        %tmp.17 = getv ? :Rez;
+        %tmp.18 = getv %tmp.17 :Layouts;
+        %tmp.19 = getv function %tmp.18 :TopLeftLayout;
+        %tmp.21 = lgetv %dc;
+        %tmp.22 = invoke %tmp.18 %tmp.19(%tmp.21);
+        invoke %tmp.14 %tmp.15(%tmp.22);
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_24_60_stop:
+        goto @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_24_8_if_end;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_24_8_if_false:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 28 15 ]
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_28_15_if_stmt:
+        %tmp.24 = lgetv %obscurityFlags.1;
+        %tmp.26 = getv ? :OBSCURE_TOP;
+        %tmp.28 = getv ? :OBSCURE_RIGHT;
+        %tmp.29 = bitor %tmp.26 %tmp.28;
+        %tmp.30 = eq %tmp.24 %tmp.29;
+        bf %tmp.30 @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_28_15_if_false;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_28_15_if_true:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_28_68_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 29 12 ]
+        %tmp.32 = getv ? :View;
+        %tmp.33 = getv function %tmp.32 :setLayout;
+        %tmp.35 = getv ? :Rez;
+        %tmp.36 = getv %tmp.35 :Layouts;
+        %tmp.37 = getv function %tmp.36 :TopRightLayout;
+        %tmp.39 = lgetv %dc;
+        %tmp.40 = invoke %tmp.36 %tmp.37(%tmp.39);
+        invoke %tmp.32 %tmp.33(%tmp.40);
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_28_68_stop:
+        goto @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_28_15_if_end;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_28_15_if_false:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 32 15 ]
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_32_15_if_stmt:
+        %tmp.42 = lgetv %obscurityFlags.1;
+        %tmp.44 = getv ? :OBSCURE_BOTTOM;
+        %tmp.46 = getv ? :OBSCURE_LEFT;
+        %tmp.47 = bitor %tmp.44 %tmp.46;
+        %tmp.48 = eq %tmp.42 %tmp.47;
+        bf %tmp.48 @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_32_15_if_false;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_32_15_if_true:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_32_70_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 33 12 ]
+        %tmp.50 = getv ? :View;
+        %tmp.51 = getv function %tmp.50 :setLayout;
+        %tmp.53 = getv ? :Rez;
+        %tmp.54 = getv %tmp.53 :Layouts;
+        %tmp.55 = getv function %tmp.54 :BottomLeftLayout;
+        %tmp.57 = lgetv %dc;
+        %tmp.58 = invoke %tmp.54 %tmp.55(%tmp.57);
+        invoke %tmp.50 %tmp.51(%tmp.58);
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_32_70_stop:
+        goto @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_32_15_if_end;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_32_15_if_false:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 36 15 ]
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_36_15_if_stmt:
+        %tmp.60 = lgetv %obscurityFlags.1;
+        %tmp.62 = getv ? :OBSCURE_BOTTOM;
+        %tmp.64 = getv ? :OBSCURE_RIGHT;
+        %tmp.65 = bitor %tmp.62 %tmp.64;
+        %tmp.66 = eq %tmp.60 %tmp.65;
+        bf %tmp.66 @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_36_15_if_false;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_36_15_if_true:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_36_71_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 37 12 ]
+        %tmp.68 = getv ? :View;
+        %tmp.69 = getv function %tmp.68 :setLayout;
+        %tmp.71 = getv ? :Rez;
+        %tmp.72 = getv %tmp.71 :Layouts;
+        %tmp.73 = getv function %tmp.72 :BottomRightLayout;
+        %tmp.75 = lgetv %dc;
+        %tmp.76 = invoke %tmp.72 %tmp.73(%tmp.75);
+        invoke %tmp.68 %tmp.69(%tmp.76);
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_36_71_stop:
+        goto @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_36_15_if_end;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_36_15_if_false:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_40_15_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 41 12 ]
+        %tmp.78 = getv ? :View;
+        %tmp.79 = getv function %tmp.78 :setLayout;
+        %tmp.81 = getv ? :Rez;
+        %tmp.82 = getv %tmp.81 :Layouts;
+        %tmp.83 = getv function %tmp.82 :MainLayout;
+        %tmp.85 = lgetv %dc;
+        %tmp.86 = invoke %tmp.82 %tmp.83(%tmp.85);
+        invoke %tmp.78 %tmp.79(%tmp.86);
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 42 12 ]
+        [ "_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_40_15_start" "_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_40_15_stop" ]
+        %labelView.2 = local;
+        %tmp.88 = getv ? :View;
+        %tmp.89 = getv function %tmp.88 :findDrawableById;
+        %tmp.90 = "label";
+        %tmp.91 = invoke %tmp.88 %tmp.89(%tmp.90);
+        lputv %labelView.2 %tmp.91;
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 43 12 ]
+        %tmp.92 = lgetv %labelView.2;
+        %tmp.93 = lgetv %labelView.2;
+        %tmp.94 = getv %tmp.93 :locY;
+        %tmp.95 = 16;
+        %tmp.96 = sub %tmp.94 %tmp.95;
+        putv %tmp.92 :locY %tmp.96;
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 44 12 ]
+        [ "_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_40_15_start" "_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_40_15_stop" ]
+        %valueView.3 = local;
+        %tmp.98 = getv ? :View;
+        %tmp.99 = getv function %tmp.98 :findDrawableById;
+        %tmp.100 = "value";
+        %tmp.101 = invoke %tmp.98 %tmp.99(%tmp.100);
+        lputv %valueView.3 %tmp.101;
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 45 12 ]
+        %tmp.102 = lgetv %valueView.3;
+        %tmp.103 = lgetv %valueView.3;
+        %tmp.104 = getv %tmp.103 :locY;
+        %tmp.105 = 7;
+        %tmp.106 = add %tmp.104 %tmp.105;
+        putv %tmp.102 :locY %tmp.106;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_40_15_stop:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_36_15_if_end:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_32_15_if_end:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_28_15_if_end:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_24_8_if_end:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 48 8 ]
+        %tmp.108 = getv ? :View;
+        %tmp.109 = getv function %tmp.108 :findDrawableById;
+        %tmp.110 = "label";
+        %tmp.111 = invoke %tmp.108 %tmp.109(%tmp.110);
+        %tmp.112 = as %tmp.111 Text;
+        %tmp.113 = getv function %tmp.112 :setText;
+        %tmp.115 = getv ? :Rez;
+        %tmp.116 = getv %tmp.115 :Strings;
+        %tmp.117 = getv %tmp.116 :label;
+        invoke %tmp.112 %tmp.113(%tmp.117);
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_20_40_stop:
+    }
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc"; @line = 55; ]
+    function compute(info as Activity.Info) as Void {
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_55_52_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 56 8 ]
+        [ "_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_55_52_start" "_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_55_52_stop" ]
+        %profileModel.1 = local;
+        %tmp.2 = getv ? :_deviceManager;
+        %tmp.3 = getv function %tmp.2 :getProfileModel;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %profileModel.1 %tmp.4;
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 57 8 ]
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_57_8_if_stmt:
+        %tmp.6 = lgetv %profileModel.1;
+        %tmp.7 = null;
+        %tmp.8 = ne %tmp.6 %tmp.7;
+        bf %tmp.8 @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_57_8_if_end;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_57_8_if_true:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_57_33_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 71 12 ]
+        %tmp.10 = getv ? :_fitContributor;
+        %tmp.11 = getv function %tmp.10 :update;
+        %tmp.12 = 94;
+        %tmp.13 = lgetv %profileModel.1;
+        %tmp.14 = as %tmp.13 { (!Null) };
+        %tmp.15 = getv function %tmp.14 :getCadence;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        %tmp.17 = 23.0;
+        %tmp.18 = 2;
+        invoke %tmp.10 %tmp.11(%tmp.12, %tmp.16, %tmp.17, %tmp.18);
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_57_33_stop:
+        goto @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_57_8_if_end;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_57_8_if_end:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_55_52_stop:
+    }
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc"; @line = 83; ]
+    function onUpdate(dc as Dc) as Void {
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_83_40_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 85 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :findDrawableById;
+        %tmp.4 = "Background";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        %tmp.6 = as %tmp.5 Text;
+        %tmp.7 = getv function %tmp.6 :setColor;
+        %tmp.8 = self;
+        %tmp.9 = getv function %tmp.8 :getBackgroundColor;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        invoke %tmp.6 %tmp.7(%tmp.10);
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 88 8 ]
+        [ "_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_83_40_start" "_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_83_40_stop" ]
+        %value.1 = local;
+        %tmp.12 = getv ? :View;
+        %tmp.13 = getv function %tmp.12 :findDrawableById;
+        %tmp.14 = "value";
+        %tmp.15 = invoke %tmp.12 %tmp.13(%tmp.14);
+        %tmp.16 = as %tmp.15 Text;
+        lputv %value.1 %tmp.16;
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 89 8 ]
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_89_8_if_stmt:
+        %tmp.17 = self;
+        %tmp.18 = getv function %tmp.17 :getBackgroundColor;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        %tmp.20 = getm $.Toybox.Graphics;
+        %tmp.21 = getv %tmp.20 :COLOR_BLACK;
+        %tmp.22 = eq %tmp.19 %tmp.21;
+        bf %tmp.22 @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_89_8_if_false;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_89_8_if_true:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_89_58_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 90 12 ]
+        %tmp.23 = lgetv %value.1;
+        %tmp.24 = getv function %tmp.23 :setColor;
+        %tmp.25 = getm $.Toybox.Graphics;
+        %tmp.26 = getv %tmp.25 :COLOR_WHITE;
+        invoke %tmp.23 %tmp.24(%tmp.26);
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_89_58_stop:
+        goto @_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_89_8_if_end;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_89_8_if_false:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_91_15_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 92 12 ]
+        %tmp.27 = lgetv %value.1;
+        %tmp.28 = getv function %tmp.27 :setColor;
+        %tmp.29 = getm $.Toybox.Graphics;
+        %tmp.30 = getv %tmp.29 :COLOR_BLACK;
+        invoke %tmp.27 %tmp.28(%tmp.30);
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_91_15_stop:
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_89_8_if_end:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 94 8 ]
+        %tmp.31 = lgetv %value.1;
+        %tmp.32 = getv function %tmp.31 :setText;
+        %tmp.33 = "23.0";
+        invoke %tmp.31 %tmp.32(%tmp.33);
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 97 8 ]
+        %tmp.35 = getv ? :View;
+        %tmp.36 = getv function %tmp.35 :onUpdate;
+        %tmp.38 = lgetv %dc;
+        invoke %tmp.35 %tmp.36(%tmp.38);
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_83_40_stop:
+    }
+    //! Handle the activity timer starting
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc"; @line = 102; ]
+    public
+    function onTimerStart() as Void {
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_102_43_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 103 8 ]
+        %tmp.2 = getv ? :_fitContributor;
+        %tmp.3 = getv function %tmp.2 :setTimerRunning;
+        %tmp.4 = true;
+        invoke %tmp.2 %tmp.3(%tmp.4);
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_102_43_stop:
+    }
+    //! Handle the activity timer stopping
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc"; @line = 107; ]
+    public
+    function onTimerStop() as Void {
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_107_42_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 108 8 ]
+        %tmp.2 = getv ? :_fitContributor;
+        %tmp.3 = getv function %tmp.2 :setTimerRunning;
+        %tmp.4 = false;
+        invoke %tmp.2 %tmp.3(%tmp.4);
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_107_42_stop:
+    }
+    //! Handle an activity timer pause
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc"; @line = 112; ]
+    public
+    function onTimerPause() as Void {
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_112_43_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 113 8 ]
+        %tmp.2 = getv ? :_fitContributor;
+        %tmp.3 = getv function %tmp.2 :setTimerRunning;
+        %tmp.4 = false;
+        invoke %tmp.2 %tmp.3(%tmp.4);
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_112_43_stop:
+    }
+    //! Handle the activity timer resuming
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc"; @line = 117; ]
+    public
+    function onTimerResume() as Void {
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_117_44_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc" 118 8 ]
+        %tmp.2 = getv ? :_fitContributor;
+        %tmp.3 = getv function %tmp.2 :setTimerRunning;
+        %tmp.4 = true;
+        invoke %tmp.2 %tmp.3(%tmp.4);
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfView_mc_117_44_stop:
+    }
+}
+[ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfView.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,123 @@
+[ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc"; @line = 4; ]
+import Toybox.BluetoothLowEnergy;
+[ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc"; @line = 6; ]
+class BpcxDfApp extends Application.AppBase{
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc"; @line = 8; @position = 16; ]
+    private
+    var _profileManager as BpcxProfileManager or Null;
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc"; @line = 9; @position = 16; ]
+    private
+    var _bleDelegate as BpcxDelegate or Null;
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc"; @line = 10; @position = 16; ]
+    private
+    var _deviceManager as BpcxDeviceManager or Null;
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc"; @line = 12; ]
+    function initialize() as Void {
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfApp_mc_12_26_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" 13 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfApp_mc_12_26_stop:
+    }
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc"; @line = 17; ]
+    function onStart(state as Dictionary or Null) as Void {
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfApp_mc_17_51_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" 18 8 ]
+        %tmp.4 = getm $;
+        %tmp.5 = getv %tmp.4 :BpcxProfileManager;
+        %tmp.1 = newc %tmp.5 ();
+        putv self :_profileManager %tmp.1;
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" 19 8 ]
+        %tmp.9 = getm $;
+        %tmp.10 = getv %tmp.9 :BpcxDelegate;
+        %tmp.12 = getv ? :_profileManager;
+        %tmp.13 = as %tmp.12 BpcxProfileManager;
+        %tmp.6 = newc %tmp.10 (%tmp.13);
+        putv self :_bleDelegate %tmp.6;
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" 20 8 ]
+        %tmp.17 = getm $;
+        %tmp.18 = getv %tmp.17 :BpcxDeviceManager;
+        %tmp.20 = getv ? :_bleDelegate;
+        %tmp.21 = as %tmp.20 BpcxDelegate;
+        %tmp.23 = getv ? :_profileManager;
+        %tmp.24 = as %tmp.23 BpcxProfileManager;
+        %tmp.14 = newc %tmp.18 (%tmp.21, %tmp.24);
+        putv self :_deviceManager %tmp.14;
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" 22 8 ]
+        %tmp.25 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.26 = getv function %tmp.25 :setDelegate;
+        %tmp.28 = getv ? :_bleDelegate;
+        %tmp.29 = as %tmp.28 BpcxDelegate;
+        invoke %tmp.25 %tmp.26(%tmp.29);
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" 23 8 ]
+        %tmp.31 = getv ? :_profileManager;
+        %tmp.32 = as %tmp.31 BpcxProfileManager;
+        %tmp.33 = getv function %tmp.32 :registerProfiles;
+        invoke %tmp.32 %tmp.33();
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" 24 8 ]
+        %tmp.35 = getv ? :_deviceManager;
+        %tmp.36 = as %tmp.35 BpcxDeviceManager;
+        %tmp.37 = getv function %tmp.36 :start;
+        invoke %tmp.36 %tmp.37();
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfApp_mc_17_51_stop:
+    }
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc"; @line = 28; ]
+    function onStop(state as Dictionary or Null) as Void {
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfApp_mc_28_50_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" 29 8 ]
+        %tmp.1 = null;
+        putv self :_deviceManager %tmp.1;
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" 30 8 ]
+        %tmp.2 = null;
+        putv self :_bleDelegate %tmp.2;
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" 31 8 ]
+        %tmp.3 = null;
+        putv self :_profileManager %tmp.3;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfApp_mc_28_50_stop:
+    }
+    //! Return the initial view of your application here
+    [ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc"; @line = 35; ]
+    function getInitialView() as Array<Views or InputDelegates> or Null {
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfApp_mc_35_65_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" 36 8 ]
+        %tmp.1 = newa Array<Views or InputDelegates> 1;
+        %tmp.5 = getv ? :BpcxDfView;
+        %tmp.7 = getv ? :_bleDelegate;
+        %tmp.8 = as %tmp.7 BpcxDelegate;
+        %tmp.10 = getv ? :_deviceManager;
+        %tmp.11 = as %tmp.10 BpcxDeviceManager;
+        %tmp.2 = newc %tmp.5 (%tmp.8, %tmp.11);
+        %tmp.12 = dup %tmp.1;
+        %tmp.13 = aputv %tmp.12 0 %tmp.2;
+        ret %tmp.13;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfApp_mc_35_65_stop:
+    }
+}
+[ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc"; @line = 40; ]
+function getApp() as BpcxDfApp {
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfApp_mc_40_31_start:
+[ "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc" 41 4 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = as %tmp.3 BpcxDfApp;
+    ret %tmp.4;
+_mnt_Data_Projects_Software_ConnectIQ_BpcxDf_source_BpcxDfApp_mc_40_31_stop:
+}
+[ @file = "/mnt/Data/Projects/Software/ConnectIQ/BpcxDf/source/BpcxDfApp.mc"; @line = 1; ]
+<init> {
+}
