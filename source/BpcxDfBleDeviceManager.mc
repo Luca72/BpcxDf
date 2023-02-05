@@ -6,7 +6,6 @@ class BpcxDeviceManager {
     private var _profileManager as BpcxProfileManager;
     private var _delegate as BpcxDelegate;
     private var _profileModel as BpcxProfileModel?;
-    private var _dataModelFactory as BpcxDataModelFactory;
     private var _device as Device?;
     
     private var _configComplete as Boolean = false;
@@ -15,14 +14,13 @@ class BpcxDeviceManager {
     //! Constructor
     //! @param bleDelegate The BLE delegate
     //! @param profileManager The profile manager
-    public function initialize(bleDelegate as BpcxDelegate, profileManager as BpcxProfileManager,  dataModelFactory as BpcxDataModelFactory) {
+    public function initialize(bleDelegate as BpcxDelegate, profileManager as BpcxProfileManager) {
         _device = null;
 
         bleDelegate.notifyScanResult(self);
         bleDelegate.notifyConnection(self);
 
         _profileManager = profileManager;
-        _dataModelFactory = dataModelFactory;
         _delegate = bleDelegate;
     }
 
@@ -56,7 +54,9 @@ class BpcxDeviceManager {
     //! Update the profile after a is device connected
     private function procDeviceConnected() as Void {
         if (_device != null) {
-            _profileModel = _dataModelFactory.getProfileModel(_device);
+            if (_profileModel == null) {
+                _profileModel = new $.BpcxProfileModel(_delegate, _profileManager, _device);
+            }            
         }
     }
 

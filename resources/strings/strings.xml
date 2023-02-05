@@ -1,8 +1,25 @@
 <strings>
     <string id="AppName">BpcxDf</string>
 
-    <string id="label">My Value</string>
-
+    <string id="cadence_label">Cadence</string>
+    <string id="cadence_unit">rpm</string>
+    <string id="actualcog_label">Gear</string>
+    <string id="heartrate_label">Heart Rate</string>
+    <string id="heartrate_unit">bpm</string>
+    <string id="elapseddistance_label">Elaps.Distance</string>
+    <string id="elapseddistance_unit">km</string>    
+    <string id="altitude_label">Altitude</string>
+    <string id="altitude_unit">mt</string>
+    <string id="totalascent_label">Tot.Ascent</string>
+    <string id="totalascent_unit">mt</string>
+    <string id="time_label">Time</string>
+    <string id="elapsedtime_label">Elaps.Time</string>
+    <string id="eco_label">ECO</string>
+    <string id="tour_label">TOUR+</string>
+    <string id="emtb_label">eMTB</string>
+    <string id="turbo_label">TURBO</string>
+    <string id="off_label">OFF</string>
+    
     <!-- Fit Contribution Fields -->
     <string id="BatteryField">Battery</string>
     <string id="BatteryUnitField">%</string>

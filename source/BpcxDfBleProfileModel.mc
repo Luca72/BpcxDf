@@ -117,8 +117,6 @@ class BpcxProfileModel {
         var characteristic = _pendingNotifies[0];
         var cccd = characteristic.getDescriptor(BluetoothLowEnergy.cccdUuid());
         if (cccd != null) {
-            System.println("Req.Write="+characteristic.getUuid().toString());
-            System.println("Array Size="+_pendingNotifies.size().toString());
             cccd.requestWrite([0x01, 0x00]b);
         }
     }
@@ -134,16 +132,94 @@ class BpcxProfileModel {
 
     }
 
-    //! Get the cadence
-    //! @return The cadence value
-    public function getCadence() as Numeric? {
+    //! Get the battery charge
+    //! @return The battery charge value
+    public function getBatteryCharge() as Numeric? {
+        return _batteryCharge;
+    }   
+
+    //! Get the battery current
+    //! @return The battery current value
+    public function getBatteryCurrent() as Numeric? {
+        return _batteryCurrent;
+    }   
+
+    //! Get the battery power
+    //! @return The battery power value
+    public function getBatteryPower() as Numeric? {
+        return _batteryPower;
+    }   
+
+    //! Get the battery voltage
+    //! @return The battery voltage value
+    public function getBatteryVoltage() as Numeric? {
+        return _batteryVoltage;
+    }   
+
+    //! Get the rider torque
+    //! @return The rider torque value
+    public function getRiderTorque() as Numeric? {
+        return _riderTorque;
+    }   
+
+    //! Get the rider cadence
+    //! @return The rider cadence value
+    public function getRiderCadence() as Numeric? {
         return _riderCadence;
-    }    
+    }   
+
+    //! Get the motor torque
+    //! @return The motor torque value
+    public function getMotorTorque() as Numeric? {
+        return _motorTorque;
+    }   
+
+    //! Get the motor power
+    //! @return The motor power value
+    public function getMotorPower() as Numeric? {
+        return _motorPower;
+    }   
+
+    //! Get the motor rpm
+    //! @return The motor rpm value
+    public function getMotorRpm() as Numeric? {
+        return _motorRpm;
+    }   
+
+    //! Get the motor support level
+    //! @return The motor support level value
+    public function getMotorSupportLevel() as Numeric? {
+        return _motorSupportLevel;
+    }   
+
+    //! Get the remaining distance
+    //! @return The remaining distance value
+    public function getRemainingDistance() as Numeric? {
+        return _remainingDistance;
+    }   
+
+    //! Get the speed
+    //! @return The speed value
+    public function getSpeed() as Numeric? {
+        return _speed;
+    }   
+
+    //! Get the odometer
+    //! @return The odometer value
+    public function getOdometer() as Numeric? {
+        return _odometer;
+    }   
+
+    //! Get the odometer
+    //! @return The ble signal intensity
+    public function getBleSignal() as Numeric? {
+        return _odometer;
+    }   
+
 
     //! Process and set the rider values
     //! @param value new rider values
     private function processRiderValues(value as ByteArray) as Void {
-        System.println("Rider");
         _riderTorque = ((value[1] << 8) | value[0]).toFloat()/10.0;         // torque
         _riderCadence = ((value[3] << 8) | value[2]).toNumber();            // cadence
         WatchUi.requestUpdate();
@@ -152,7 +228,6 @@ class BpcxProfileModel {
     //! Process and set the battery values
     //! @param value new battery values
     private function processBatteryValues(value as ByteArray) as Void {
-        System.println("Battery");
         _batteryCharge = ((value[3] << 8) | value[2]).toNumber();           // charge
         _batteryCurrent = ((value[5] << 8) | value[4]).toFloat()/1000.0;    // current
         _batteryPower = ((value[7] << 8) | value[6]).toFloat()/10.0;        // power
@@ -163,7 +238,6 @@ class BpcxProfileModel {
     //! Process and set the motor values
     //! @param value new motor values
     private function processMotorValues(value as ByteArray) as Void {
-        System.println("Motor");
         _motorTorque = ((value[1] << 8) | value[0]).toFloat()/10.0;         // torque
         _motorPower = ((value[3] << 8) | value[2]).toFloat()/10.0;          // power
         _motorRpm = ((value[5] << 8) | value[4]).toNumber();                // rpm
@@ -174,7 +248,6 @@ class BpcxProfileModel {
     //! Process and set the distance values
     //! @param value new distance values
     private function processDistanceValues(value as ByteArray) as Void {
-        System.println("Distance");
         _remainingDistance = ((value[1] << 8) | value[0]).toNumber();       // rpm
         _speed = ((value[3] << 8) | value[2]).toFloat()/10.0;               // speed
         _odometer = ((value[5] << 8) | value[4]).toNumber();                // rpm
