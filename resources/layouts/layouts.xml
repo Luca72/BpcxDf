@@ -2,29 +2,36 @@
     <!-- A generic, centered layout. -->
     <layout id="MainLayout">
         <drawable class="Background" />
+        <drawable class="DeviceBattery"><param name="x">173</param><param name="y">4</param></drawable>
+        <drawable class="GpsSign"><param name="x">205</param><param name="y">3</param></drawable>
+        <drawable class="BleSign"><param name="x">235</param><param name="y">10</param></drawable>
+        <drawable class="BikeBattery"><param name="x">7</param><param name="y">290</param></drawable>
+        <drawable class="PowerBar"><param name="x">50</param><param name="y">70</param></drawable>
+        <drawable class="HeartrateBar"><param name="x">185</param><param name="y">188</param></drawable>        
+        <drawable class="CassetteCog"><param name="x">133</param><param name="y">155</param></drawable>
         <label id="cadence" x="55" y="62" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" font="Graphics.FONT_NUMBER_MEDIUM" />
         <label id="cadence_label" x="0" y="0" color="Graphics.COLOR_LT_GRAY" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_TINY" />
         <label id="cadence_unit" x="0" y="0" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_LEFT" font="Graphics.FONT_TINY" />        
         <label id="heartrate" x="185" y="62" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" font="Graphics.FONT_NUMBER_MEDIUM" />
         <label id="heartrate_label" x="0" y="0" color="Graphics.COLOR_LT_GRAY" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_TINY" />
         <label id="heartrate_unit" x="0" y="0" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_LEFT" font="Graphics.FONT_TINY" />        
-        <label id="actualcog" x="60" y="140" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_NUMBER_MEDIUM" />
+        <label id="actualcog" x="185" y="120" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_NUMBER_MILD" />
         <label id="actualcog_label" x="0" y="0" color="Graphics.COLOR_LT_GRAY" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_TINY" />
-        <label id="elapseddistance" x="185" y="140" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" font="Graphics.FONT_NUMBER_MEDIUM" />
+        <label id="elapseddistance" x="60" y="140" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" font="Graphics.FONT_NUMBER_MEDIUM" />
         <label id="elapseddistance_label" x="0" y="0" color="Graphics.COLOR_LT_GRAY" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_TINY" />                
         <label id="elapseddistance_unit" x="0" y="0" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_LEFT" font="Graphics.FONT_TINY" />        
-        <label id="altitude" x="60" y="195" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" font="Graphics.FONT_NUMBER_MEDIUM" />
+        <label id="altitude" x="185" y="195" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" font="Graphics.FONT_NUMBER_MEDIUM" />
         <label id="altitude_label" x="0" y="0" color="Graphics.COLOR_LT_GRAY" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_TINY" />
         <label id="altitude_unit" x="0" y="0" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_LEFT" font="Graphics.FONT_TINY" />        
-        <label id="totalascent" x="185" y="195" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" font="Graphics.FONT_NUMBER_MEDIUM" />
+        <label id="totalascent" x="60" y="195" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" font="Graphics.FONT_NUMBER_MEDIUM" />
         <label id="totalascent_label" x="0" y="0" color="Graphics.COLOR_LT_GRAY" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_TINY" />
         <label id="totalascent_unit" x="0" y="0" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_LEFT" font="Graphics.FONT_TINY" />        
-        <label id="time" x="60" y="250" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_NUMBER_MEDIUM" />
+        <label id="time" x="185" y="250" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_NUMBER_MEDIUM" />
         <label id="time_label" x="0" y="0" color="Graphics.COLOR_LT_GRAY" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_TINY" />        
-        <label id="elapsedtime" x="185" y="250" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_NUMBER_MEDIUM" />
+        <label id="elapsedtime" x="60" y="250" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_NUMBER_MEDIUM" />
         <label id="elapsedtime_label" x="0" y="0" color="Graphics.COLOR_LT_GRAY" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_TINY" />
-        <label id="temperature" x="120" y="10" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER|Graphics.TEXT_JUSTIFY_VCENTER" font="Graphics.FONT_MEDIUM" />
-        <label id="support" x="45" y="10" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER|Graphics.TEXT_JUSTIFY_VCENTER" font="Graphics.FONT_MEDIUM" />
+        <label id="temperature" x="153" y="10" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER|Graphics.TEXT_JUSTIFY_VCENTER" font="Graphics.FONT_MEDIUM" />
+        <label id="support" x="60" y="10" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER|Graphics.TEXT_JUSTIFY_VCENTER" font="Graphics.FONT_MEDIUM" />
     </layout>
 
     <!-- Layouts used for the for the four quadrants. -->

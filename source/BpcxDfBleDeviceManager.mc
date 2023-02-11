@@ -8,9 +8,6 @@ class BpcxDeviceManager {
     private var _profileModel as BpcxProfileModel?;
     private var _device as Device?;
     
-    private var _configComplete as Boolean = false;
-    private var _sampleInProgress as Boolean = false;
-
     //! Constructor
     //! @param bleDelegate The BLE delegate
     //! @param profileManager The profile manager

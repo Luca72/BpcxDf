@@ -10,18 +10,18 @@ class BpcxDfView extends WatchUi.DataField {
 
     // Bosch CX field values
     private var _batteryChargeField as Numeric?;          // battery data
-    private var _batteryCurrentField as Float?; 
-    private var _batteryPowerField as Float?;
-    private var _batteryVoltageField as Float?;
+    //private var _batteryCurrentField as Float?; 
+    //private var _batteryPowerField as Float?;
+    //private var _batteryVoltageField as Float?;
     private var _riderTorqueField as Float?;            // rider data  
     private var _riderCadenceField as Numeric?;
     private var _motorTorqueField as Float?;            // motor data
-    private var _motorPowerElField as Float?;
-    private var _motorRpmField as Numeric?;
+    //private var _motorPowerElField as Float?;
+    //private var _motorRpmField as Numeric?;
     private var _motorSupportLevelField as Numeric?;
-    private var _remainingDistanceField as Numeric?;      // miscellaneous data
+    //private var _remainingDistanceField as Numeric?;      // miscellaneous data
     private var _speedField as Float?;
-    private var _odometerField as Numeric?;
+    //private var _odometerField as Numeric?;
 
     // Calculated fields    
     private var _riderPowerField as Numeric?;
@@ -47,18 +47,10 @@ class BpcxDfView extends WatchUi.DataField {
 
 
     private var _textColor as Numeric;
-    private var _supportText = ["", "ECO" , "TOUR+", "eMTB", "TURBO", "", "", "", "", "OFF"];
+    private var _supportText = ["OFFLINE", "ECO" , "TOUR+", "eMTB", "TURBO", "", "", "", "", "OFF"];
 
     private var _supportColor = 
-        [Graphics.COLOR_LT_GRAY, Graphics.COLOR_DK_BLUE, Graphics.COLOR_DK_GREEN, Graphics.COLOR_ORANGE, Graphics.COLOR_DK_RED, 0, 0, 0, Graphics.COLOR_LT_GRAY];
-    private var _motorPowerColor = 
-        [Graphics.COLOR_LT_GRAY, Graphics.COLOR_DK_BLUE, Graphics.COLOR_DK_GREEN, Graphics.COLOR_ORANGE, Graphics.COLOR_DK_RED, 0, 0, 0, Graphics.COLOR_LT_GRAY];
-    private var _riderPowerColor = 
-        [Graphics.COLOR_LT_GRAY, Graphics.COLOR_BLUE, Graphics.COLOR_GREEN, Graphics.COLOR_YELLOW, Graphics.COLOR_RED, 0, 0, 0, Graphics.COLOR_LT_GRAY];
-
-    private var _highHeartrate as Numeric;
-    private var _maxHeartrate as Numeric;
-    private var _heartrateZones = UserProfile.getHeartRateZones(UserProfile.HR_ZONE_SPORT_GENERIC);
+        [Graphics.COLOR_LT_GRAY, Graphics.COLOR_DK_BLUE, Graphics.COLOR_DK_GREEN, Graphics.COLOR_ORANGE, Graphics.COLOR_DK_RED, 0, 0, 0, 0, Graphics.COLOR_LT_GRAY];
 
     private const _batteryChargeLinSpline = 
         [[0.0,0.0],[10.0,5.0], [20.0,11.0],[30.0,20.0],[40.0,30.0],[50.0,40.0],[60.0,50.0],[70.0,61.0],[80.0,73.0],[90.0,85.0],[100.0,100.0]];
@@ -76,18 +68,18 @@ class BpcxDfView extends WatchUi.DataField {
         // Bosch CX fields
         
         _batteryChargeField = 0;
-        _batteryCurrentField = 0.0;
-        _batteryPowerField = 0.0;
-        _batteryVoltageField = 0.0;
+        //_batteryCurrentField = 0.0;
+        //_batteryPowerField = 0.0;
+        //_batteryVoltageField = 0.0;
         _riderTorqueField = 0.0;
         _riderCadenceField = 0;
         _motorTorqueField = 0.0;
-        _motorPowerElField = 0.0;
-        _motorRpmField = 0;
+        //_motorPowerElField = 0.0;
+        //_motorRpmField = 0;
         _motorSupportLevelField = 0;
-        _remainingDistanceField = 0;
+        //_remainingDistanceField = 0;
         _speedField = 0.0;
-        _odometerField = 0;
+        //_odometerField = 0;
         /*
         _batteryChargeField = 57;
         _batteryCurrentField = 8.5;
@@ -124,8 +116,6 @@ class BpcxDfView extends WatchUi.DataField {
         _temperatureField = 0.0;
 
         _textColor = 0;
-        _highHeartrate = 0;
-        _maxHeartrate = _heartrateZones[5];
 
         _deviceManager = deviceManager;
         _fitContributor = new $.BpcxFitContributor(self);
@@ -241,19 +231,19 @@ class BpcxDfView extends WatchUi.DataField {
     function compute(info as Activity.Info) as Void {
         var profile = _deviceManager.getActiveProfile();
         if (_deviceManager.isConnected() && (profile != null)) {
-            _batteryChargeField = profile.getBatteryCharge();
-            _batteryCurrentField = profile.getBatteryCurrent();
-            _batteryPowerField = profile.getBatteryPower();
-            _batteryVoltageField = profile.getBatteryVoltage();
+            _batteryChargeField = linearizeValue(profile.getBatteryCharge(), _batteryChargeLinSpline, _batteryChargeLinSplineSize);
+            //_batteryCurrentField = profile.getBatteryCurrent();
+            //_batteryPowerField = profile.getBatteryPower();
+            //_batteryVoltageField = profile.getBatteryVoltage();
             _riderTorqueField = profile.getRiderTorque();
             _riderCadenceField = profile.getRiderCadence();
             _motorTorqueField = profile.getMotorTorque();
-            _motorPowerElField = profile.getMotorPower();
-            _motorRpmField = profile.getMotorRpm();
+            //_motorPowerElField = profile.getMotorPower();
+            //_motorRpmField = profile.getMotorRpm();
             _motorSupportLevelField = profile.getMotorSupportLevel();
-            _remainingDistanceField = profile.getRemainingDistance();
+            //_remainingDistanceField = profile.getRemainingDistance();
             _speedField = profile.getSpeed();
-            _odometerField = profile.getOdometer();
+            //_odometerField = profile.getOdometer();
 
             _bleConnected = true;
         } else {
@@ -270,8 +260,6 @@ class BpcxDfView extends WatchUi.DataField {
 
         _riderPowerField = ((_riderCadenceField*_riderTorqueField)/9.5488).toNumber();
         _motorPowerField = ((_riderCadenceField*_motorTorqueField*2.52)/9.5488).toNumber();
-
-        _highHeartrate = _heartrateField>_highHeartrate ? _heartrateField : _highHeartrate;
 
         _batteryDevice = System.getSystemStats().battery;
         _gpsSignal = info.currentLocationAccuracy != null ? info.currentLocationAccuracy : 0;
@@ -296,6 +284,16 @@ class BpcxDfView extends WatchUi.DataField {
         // Set the foreground color and value
         _textColor = getBackgroundColor() == Graphics.COLOR_BLACK ? Graphics.COLOR_WHITE : Graphics.COLOR_BLACK; 
 
+        // Drawables
+        (View.findDrawableById("DeviceBattery") as DeviceBattery).setChargeLevel(_batteryDevice);
+        (View.findDrawableById("GpsSign") as GpsSign).setSignalLevel(_gpsSignal);
+        (View.findDrawableById("BleSign") as BleSign).setConnected(_bleConnected); 
+        (View.findDrawableById("PowerBar") as PowerBar).setPowerLevel(_motorPowerField, _riderPowerField, _motorSupportLevelField);
+        (View.findDrawableById("HeartrateBar") as HeartrateBar).setHeartrate(_heartrateField); 
+        (View.findDrawableById("BikeBattery") as BikeBattery).setChargeLevel(_batteryChargeField);        
+        (View.findDrawableById("CassetteCog") as CassetteCog).setCog(_cassetteActualCogField, _cassetteCogsNumber);        
+
+        // Labels
         var cadence = View.findDrawableById("cadence") as Text;
         cadence.setColor(_textColor);
         cadence.setText(_bleConnected==true ? _riderCadenceField.toString() : "__");
@@ -304,7 +302,7 @@ class BpcxDfView extends WatchUi.DataField {
 
         var cog = View.findDrawableById("actualcog") as Text;
         cog.setColor(_textColor);
-        cog.setText((_cassetteActualCogField>0 ? _cassetteActualCogField.toString() : "__")/*+"/"+_cassetteCogsNumber.toString()*/);
+        cog.setText((_cassetteActualCogField>0 ? "S"+_cassetteActualCogField.toString()+"-"+_cassetteCogTeeth[_cassetteActualCogField-1].toString() : "S__-__")/*+"/"+_cassetteCogsNumber.toString()*/);
 
         var heartrate = View.findDrawableById("heartrate") as Text;
         heartrate.setColor(_textColor);
@@ -349,191 +347,6 @@ class BpcxDfView extends WatchUi.DataField {
 
         // Call parent's onUpdate(dc) to redraw the layout
         View.onUpdate(dc);
-
-        // Draw over layout
-        drawBattery(dc, 7, 290, _batteryChargeField);
-        drawPowerBar(dc, 50, 70, _motorPowerField, _riderPowerField, _motorSupportLevelField);
-        drawHRBar(dc, 185, 185, _heartrateField, _highHeartrate);
-        drawDeviceBattery(dc, 160, 5, _batteryDevice);
-        drawGpsSign(dc, 200, 0, _gpsSignal);
-        drawBleSign(dc, 235, 11, _bleConnected);
-    }
-
-    //! @author Luca72
-    // function for drawing power meter
-	public function drawPowerBar(dc, posX, posY, motorpower, riderpower, support) {
-        var maxPowerRect = 387.0;           // 1000W max power rider+motor, 613W arc, 387W rect
-        var maxGraphicUnitsRect = 70;       // 230arc, 70rect
-        var ratioRect = maxGraphicUnitsRect / maxPowerRect;
-        var motorPowerRect = motorpower<maxPowerRect ? motorpower : maxPowerRect;
-        var riderPowerRect = (motorpower+riderpower)<maxPowerRect ? riderpower : (motorpower<maxPowerRect ? maxPowerRect-motorpower : 0);
-        var motorFillRectW = (motorPowerRect.toFloat()*ratioRect).toNumber();
-        var riderFillRectW = (riderPowerRect.toFloat()*ratioRect).toNumber();
-
-        var maxPowerArc = 613.0;            // 1000W max power rider+motor, 613W arc, 387W rect
-        var maxGraphicUnitsArc = 230;       // 230arc, 70rect
-        var ratioArc = maxGraphicUnitsArc / maxPowerArc;
-        var motorPowerArc = motorpower>maxPowerRect ? ((motorpower-maxPowerRect)<maxPowerArc ? motorpower-maxPowerRect : maxPowerArc) : 0;
-        var riderPowerArc = (motorpower+riderpower)>maxPowerRect ? ((riderpower+motorPowerArc)<maxPowerArc ? riderpower-riderPowerRect : maxPowerArc-motorPowerArc) : 0;
-        var motorFillArcW = (motorPowerArc.toFloat()*ratioArc).toNumber();
-        var riderFillArcW = (riderPowerArc.toFloat()*ratioArc).toNumber();
-        
-
-		dc.setPenWidth(10);
-
-        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(posX, posY+36, maxGraphicUnitsRect, 10);
-		dc.drawArc(posX, posY, 40, Graphics.ARC_CLOCKWISE, 270, 40);
-
-        dc.setColor(_motorPowerColor[support], Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(posX+(maxGraphicUnitsRect-motorFillRectW), posY+36, motorFillRectW, 10);
-		if (motorFillArcW>0) { 
-            dc.drawArc(posX, posY, 40, Graphics.ARC_CLOCKWISE, 270, 270-motorFillArcW);
-        }
-
-        dc.setColor(_riderPowerColor[support], Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(posX+(maxGraphicUnitsRect-(motorFillRectW+riderFillRectW)), posY+36, riderFillRectW, 10);
-        if (riderFillArcW>0) { 
-		    dc.drawArc(posX, posY, 40, Graphics.ARC_CLOCKWISE, 270-motorFillArcW, (270-motorFillArcW)-riderFillArcW);
-        }
-    }
-
-    //! @author Luca72
-    // function for drawing heart rate meter
-	public function drawHRBar(dc, posX, posY, heartrate, highheartrate) {  
-        var minHrArc = 60;
-        var maxHrArc = _maxHeartrate;
-        var maxGraphicUnitsArc = 40;
-        var ratioArc = maxGraphicUnitsArc.toFloat() / (maxHrArc-minHrArc).toFloat();
-        var hrFillArcW = ((heartrate-minHrArc).toFloat()*ratioArc).toNumber();
-        var hrHighArcW = ((highheartrate-minHrArc).toFloat()*ratioArc).toNumber();
-        
-        dc.setPenWidth(10);
-        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-        dc.drawArc(posX, posY, 155, Graphics.ARC_CLOCKWISE, 110, 70);
-
-        if((hrFillArcW>0) and (hrFillArcW<maxGraphicUnitsArc)) {
-            if(heartrate<_heartrateZones[0]) {
-                dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
-            } else if(heartrate<_heartrateZones[1]) {
-                dc.setColor(Graphics.COLOR_DK_GREEN, Graphics.COLOR_TRANSPARENT);
-            } else if(heartrate<_heartrateZones[2]) {
-                dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
-            } else if(heartrate<_heartrateZones[3]) {
-                dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-            } else if(heartrate<_heartrateZones[4]) {
-                dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
-            } else {
-                dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
-            }
-            dc.drawArc(posX, posY, 155, Graphics.ARC_CLOCKWISE, 110, 110-hrFillArcW);
-        }
-
-        if((hrHighArcW>0) and (hrHighArcW<maxGraphicUnitsArc)) {
-            dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_TRANSPARENT);
-            dc.drawArc(posX, posY, 155, Graphics.ARC_CLOCKWISE, 110-hrHighArcW, 110-hrHighArcW-1);
-        }
-    }
-
-    //! @author Luca72
-    // function for drawing battery shape
-	public function drawBattery(dc, posX, posY, charge) {
-        var chargeLin = linearizeValue(charge, _batteryChargeLinSpline, _batteryChargeLinSplineSize);
-        var ratio = (dc.getWidth()-(posX*2)).toFloat() / 100.0;
-        var capX = dc.getWidth()-(posX+10);
-        var filledW = (chargeLin.toFloat()*ratio).toNumber();
-        var maxFilledBodyW = (dc.getWidth()-(posX*2))-10;
-        var filledBodyW = filledW < maxFilledBodyW ? filledW : maxFilledBodyW;
-        var maxFilledCapW = 10;
-        var filledCapW = filledW-maxFilledBodyW;
-
-        
-        if(chargeLin > 20) {
-            dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
-        } else if(chargeLin > 5) {
-            dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-        } else {
-            dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
-        }
-        dc.fillRectangle(posX, posY, filledBodyW, 30);
-        dc.fillRectangle(capX, posY+5, filledCapW, 20);
-
-        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(posX+filledBodyW, posY, maxFilledBodyW-filledBodyW, 30);
-        dc.fillRectangle(capX+filledCapW, posY+5, maxFilledCapW-filledCapW, 20);
-
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-        var chargeStr = chargeLin.toString() + "%";
-        dc.drawText(dc.getWidth()/2, posY+15, Graphics.FONT_LARGE, chargeStr, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-    }
-
-    //! @author Luca72
-    // function for drawing Garmin device battery level
-    public function drawDeviceBattery(dc, posX, posY, battery) {    
-        var width = 25;
-        var height = 15;
-
-        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(posX, posY, width, height);
-        dc.fillRectangle(posX + width - 1, posY + 3, 4, height - 6);
-        
-        if (battery < 10) {
-            dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(posX+3 + width / 2, posY + 6, Graphics.FONT_XTINY, format("$1$%", [battery.format("%d")]), Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-        }
-        
-        if (battery < 10) {
-            dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
-        } else if (battery < 30) {
-            dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-        } else {
-            dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
-        }
-        dc.fillRectangle(posX + 1, posY + 1, (width-2) * battery / 100, height - 2);
-    }
-    
-    //! @author Luca72
-    // function for drawing GPS sign
-    function drawGpsSign(dc, posX, posY, gpssignal) {
-        if (gpssignal > 1) {
-            dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-        } else {
-            dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-        }
-        dc.fillRectangle(posX, posY + 12, 6, 8);
-
-        if (gpssignal > 2) {
-            dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-        } else {
-            dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-        }
-        dc.fillRectangle(posX + 7, posY + 8, 6, 12);
-
-        if (gpssignal > 3) {
-            dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-        } else {
-            dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-        }        
-        dc.fillRectangle(posX + 14, posY + 4, 6, 16);   
-    } 
-
-    //! @author Luca72
-    // function for drawing BLE sign
-    function drawBleSign(dc, posX, posY, connected) {
-        if (connected == true) {
-            dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_TRANSPARENT);
-        } else {
-            dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);                
-        }
-        //dc.fillCircle(posX, posY, 6);
-
-        dc.setPenWidth(2);
-
-        dc.drawLine(posX, posY-7, posX, posY+7);
-        dc.drawLine(posX, posY-7, posX+5, posY-4);
-        dc.drawLine(posX, posY+7, posX+5, posY+4);
-        dc.drawLine(posX+5, posY-4, posX-5, posY+3);
-        dc.drawLine(posX+5, posY+4, posX-5, posY-3);
     }
 
     function getIterator() {
