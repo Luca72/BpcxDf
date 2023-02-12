@@ -1,6 +1,7 @@
 import Toybox.BluetoothLowEnergy;
 import Toybox.Lang;
 import Toybox.System;
+import Toybox.Attention;
 
 class BpcxDeviceManager {
     private var _profileManager as BpcxProfileManager;
@@ -33,6 +34,10 @@ class BpcxDeviceManager {
         if (scanResult.getRssi() > -50) {
             BluetoothLowEnergy.setScanState(BluetoothLowEnergy.SCAN_STATE_OFF);
             BluetoothLowEnergy.pairDevice(scanResult);
+            System.println("Paired");
+            if (Attention has :playTone) {
+                Attention.playTone(Attention.TONE_SUCCESS);
+            }
         }
     }
 
@@ -44,7 +49,13 @@ class BpcxDeviceManager {
             procDeviceConnected();
             WatchUi.requestUpdate();
         } else {
-            _device = null;
+            BluetoothLowEnergy.unpairDevice(_device);
+            System.println("Unpaired");
+            BluetoothLowEnergy.setScanState(BluetoothLowEnergy.SCAN_STATE_SCANNING);
+            _device = null;   
+            if (Attention has :playTone) {
+                Attention.playTone(Attention.TONE_FAILURE);
+            }                     
         }
     }
 
@@ -53,7 +64,9 @@ class BpcxDeviceManager {
         if (_device != null) {
             if (_profileModel == null) {
                 _profileModel = new $.BpcxProfileModel(_delegate, _profileManager, _device);
-            }            
+            } else {
+                _profileModel.startNotifications();
+            }      
         }
     }
 

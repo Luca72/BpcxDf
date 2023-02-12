@@ -49,31 +49,7 @@ class BpcxProfileModel {
         _odometer = 0;
 
         _pendingNotifies = [] as Array<Characteristic>;
-
-        var service = _service;
-        if (service != null) {
-            var characteristic = service.getCharacteristic(profileManager.BPCX_RIDER_CHARACTERISTICS);
-            if (null != characteristic) {
-                _pendingNotifies = _pendingNotifies.add(characteristic);
-            }
-
-            characteristic = service.getCharacteristic(profileManager.BPCX_BATTERY_CHARACTERISTICS);
-            if (null != characteristic) {
-                _pendingNotifies = _pendingNotifies.add(characteristic);
-            }
-
-            characteristic = service.getCharacteristic(profileManager.BPCX_MOTOR_CHARACTERISTICS);
-            if (null != characteristic) {
-                _pendingNotifies = _pendingNotifies.add(characteristic);
-            }
-            
-            characteristic = service.getCharacteristic(profileManager.BPCX_DISTANCE_CHARACTERISTICS);
-            if (null != characteristic) {
-                _pendingNotifies = _pendingNotifies.add(characteristic);
-            } 
-        }
-
-        activateNextNotification();
+        startNotifications();
     }
 
     //! Handle a characteristic being changed
@@ -108,8 +84,42 @@ class BpcxProfileModel {
         }
     }
 
+    //! Starts notifications
+    public function startNotifications() as Void {
+        if (_pendingNotifies.size() != 0) {
+            _pendingNotifies = [] as Array<Characteristic>;
+        }
+
+        var service = _service;
+        if (service != null) {
+            var characteristic = service.getCharacteristic(_profileManager.BPCX_RIDER_CHARACTERISTICS);
+            if (null != characteristic) {
+                _pendingNotifies = _pendingNotifies.add(characteristic);
+            }
+
+            characteristic = service.getCharacteristic(_profileManager.BPCX_BATTERY_CHARACTERISTICS);
+            if (null != characteristic) {
+                _pendingNotifies = _pendingNotifies.add(characteristic);
+            }
+
+            characteristic = service.getCharacteristic(_profileManager.BPCX_MOTOR_CHARACTERISTICS);
+            if (null != characteristic) {
+                _pendingNotifies = _pendingNotifies.add(characteristic);
+            }
+            
+            characteristic = service.getCharacteristic(_profileManager.BPCX_DISTANCE_CHARACTERISTICS);
+            if (null != characteristic) {
+                _pendingNotifies = _pendingNotifies.add(characteristic);
+            } 
+        }
+
+        activateNextNotification();
+    }
+
+
     //! Write the next notification to the descriptor
     private function activateNextNotification() as Void {
+        System.println("activateNextNotification:"+_pendingNotifies.size().toString());
         if (_pendingNotifies.size() == 0) {
             return;
         }
